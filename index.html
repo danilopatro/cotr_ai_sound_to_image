@@ -7,7 +7,8 @@
     cardName.textContent = "Carregando dados do servidor Python...";
 
     // 3. Faz a requisição para a sua API Python
-    fetch('http://localhost:5000/api/timeline')
+    // ANTES: fetch('http://localhost:5000/api/timeline')
+    fetch('/api/timeline')
         .then(response => response.json()) // Transforma a resposta em JSON
         .then(dadosDoPython => {
             // 4. Alimenta a nossa timeline com os dados reais
