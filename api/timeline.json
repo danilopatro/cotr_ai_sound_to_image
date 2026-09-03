@@ -1,106 +1,126 @@
 [
     {
-        "tempo_segundos": 518,
+        "tempo_segundos": 343,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
+    },
+    {
+        "tempo_segundos": 414,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
+    },
+    {
+        "tempo_segundos": 506,
+        "nome": "Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/142003.png"
+    },
+    {
+        "tempo_segundos": 506,
+        "nome": "Mirror of Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/08118.png"
+    },
+    {
+        "tempo_segundos": 524,
+        "nome": "Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/142003.png"
+    },
+    {
+        "tempo_segundos": 524,
+        "nome": "Mirror of Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/08118.png"
+    },
+    {
+        "tempo_segundos": 532,
         "nome": "The One Ring",
         "url": "https://ringsdb.com/bundles/cards/21001.png"
     },
     {
-        "tempo_segundos": 1179,
+        "tempo_segundos": 1180,
         "nome": "Palantir",
         "url": "https://ringsdb.com/bundles/cards/06090.png"
     },
     {
-        "tempo_segundos": 1840,
-        "nome": "Wolf",
-        "url": "https://ringsdb.com/bundles/cards/302047.png"
+        "tempo_segundos": 1324,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2420,
-        "nome": "King Of Dale",
+        "tempo_segundos": 2444,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
-        "tempo_segundos": 2475,
-        "nome": "King Of Dale",
+        "tempo_segundos": 2489,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
         "tempo_segundos": 2557,
-        "nome": "King Of Dale",
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
-        "tempo_segundos": 2608,
-        "nome": "Into The West",
+        "tempo_segundos": 2615,
+        "nome": "Into the West",
         "url": "https://ringsdb.com/bundles/cards/500042.png"
     },
     {
-        "tempo_segundos": 2625,
-        "nome": "Into The West",
+        "tempo_segundos": 2626,
+        "nome": "Into the West",
         "url": "https://ringsdb.com/bundles/cards/500042.png"
     },
     {
         "tempo_segundos": 2658,
-        "nome": "King Of Dale",
+        "nome": "Bard son of Brand",
+        "url": "https://ringsdb.com/bundles/cards/18002.png"
+    },
+    {
+        "tempo_segundos": 2668,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
-        "tempo_segundos": 2730,
-        "nome": "Spare Hood And Cloak",
+        "tempo_segundos": 2727,
+        "nome": "Spare Hood and Cloak",
         "url": "https://ringsdb.com/bundles/cards/131012.png"
     },
     {
-        "tempo_segundos": 2740,
-        "nome": "Spare Hood And Cloak",
+        "tempo_segundos": 2727,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
+    },
+    {
+        "tempo_segundos": 2736,
+        "nome": "Spare Hood and Cloak",
         "url": "https://ringsdb.com/bundles/cards/131012.png"
     },
     {
-        "tempo_segundos": 2753,
-        "nome": "Into The West",
+        "tempo_segundos": 2759,
+        "nome": "Into the West",
         "url": "https://ringsdb.com/bundles/cards/500042.png"
     },
     {
-        "tempo_segundos": 2811,
-        "nome": "Mr. Underhill",
-        "url": "https://ringsdb.com/bundles/cards/141017.png"
-    },
-    {
-        "tempo_segundos": 2838,
+        "tempo_segundos": 2833,
         "nome": "Bartering",
         "url": "https://ringsdb.com/bundles/cards/18015.png"
     },
     {
-        "tempo_segundos": 2983,
-        "nome": "King Of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png"
-    },
-    {
-        "tempo_segundos": 2998,
-        "nome": "King Of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png"
-    },
-    {
-        "tempo_segundos": 3007,
-        "nome": "A Test Of Will",
+        "tempo_segundos": 3009,
+        "nome": "A Test of Will",
         "url": "https://ringsdb.com/bundles/cards/01050.png"
     },
     {
-        "tempo_segundos": 3014,
+        "tempo_segundos": 3016,
         "nome": "Hasty Stroke",
         "url": "https://ringsdb.com/bundles/cards/01048.png"
     },
     {
-        "tempo_segundos": 3014,
-        "nome": "A Test Of Will",
+        "tempo_segundos": 3016,
+        "nome": "A Test of Will",
         "url": "https://ringsdb.com/bundles/cards/01050.png"
     },
     {
-        "tempo_segundos": 3014,
-        "nome": "King Of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png"
-    },
-    {
-        "tempo_segundos": 3180,
+        "tempo_segundos": 3176,
         "nome": "Fellowship",
         "url": "https://ringsdb.com/bundles/cards/21074.png"
     },
@@ -115,53 +135,63 @@
         "url": "https://ringsdb.com/bundles/cards/301011.png"
     },
     {
-        "tempo_segundos": 3343,
-        "nome": "King Of Dale",
+        "tempo_segundos": 3342,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
-        "tempo_segundos": 3351,
+        "tempo_segundos": 3357,
         "nome": "Drinking Song",
         "url": "https://ringsdb.com/bundles/cards/19116.png"
     },
     {
-        "tempo_segundos": 3448,
+        "tempo_segundos": 3450,
         "nome": "Gavin",
         "url": "https://ringsdb.com/bundles/cards/301011.png"
     },
     {
-        "tempo_segundos": 3489,
-        "nome": "Bard Son Of Brand",
+        "tempo_segundos": 3488,
+        "nome": "Bard son of Brand",
         "url": "https://ringsdb.com/bundles/cards/18002.png"
     },
     {
         "tempo_segundos": 3525,
-        "nome": "Into The West",
+        "nome": "Into the West",
         "url": "https://ringsdb.com/bundles/cards/500042.png"
     },
     {
+        "tempo_segundos": 3563,
+        "nome": "Bard son of Brand",
+        "url": "https://ringsdb.com/bundles/cards/18002.png"
+    },
+    {
         "tempo_segundos": 3603,
-        "nome": "King Of Dale",
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
-        "tempo_segundos": 3637,
+        "tempo_segundos": 3635,
         "nome": "Dale Messenger",
         "url": "https://ringsdb.com/bundles/cards/22111.png"
     },
     {
-        "tempo_segundos": 4034,
-        "nome": "King Of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png"
+        "tempo_segundos": 4109,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 4136,
+        "tempo_segundos": 4134,
         "nome": "North Realm Lookout",
         "url": "https://ringsdb.com/bundles/cards/18004.png"
     },
     {
-        "tempo_segundos": 4256,
-        "nome": "King Of Dale",
+        "tempo_segundos": 4220,
+        "nome": "King of Dale",
+        "url": "https://ringsdb.com/bundles/cards/18008.png"
+    },
+    {
+        "tempo_segundos": 4254,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
@@ -175,73 +205,78 @@
         "url": "https://ringsdb.com/bundles/cards/19092.png"
     },
     {
-        "tempo_segundos": 4349,
+        "tempo_segundos": 4340,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
+    },
+    {
+        "tempo_segundos": 4350,
         "nome": "Wild Stallion",
         "url": "https://ringsdb.com/bundles/cards/19033.png"
     },
     {
-        "tempo_segundos": 4365,
-        "nome": "Wild Stallion",
-        "url": "https://ringsdb.com/bundles/cards/19033.png"
-    },
-    {
-        "tempo_segundos": 4419,
+        "tempo_segundos": 4420,
         "nome": "Determination",
         "url": "https://ringsdb.com/bundles/cards/10172.png"
     },
     {
-        "tempo_segundos": 4419,
+        "tempo_segundos": 4420,
         "nome": "Valiant Determination",
         "url": "https://ringsdb.com/bundles/cards/19092.png"
     },
     {
-        "tempo_segundos": 4487,
+        "tempo_segundos": 4493,
         "nome": "Fellowship",
         "url": "https://ringsdb.com/bundles/cards/21074.png"
     },
     {
-        "tempo_segundos": 4496,
+        "tempo_segundos": 4500,
         "nome": "Determination",
         "url": "https://ringsdb.com/bundles/cards/10172.png"
     },
     {
-        "tempo_segundos": 4532,
+        "tempo_segundos": 4526,
         "nome": "Bartering",
         "url": "https://ringsdb.com/bundles/cards/18015.png"
     },
     {
-        "tempo_segundos": 4707,
+        "tempo_segundos": 4641,
+        "nome": "Spare Hood and Cloak",
+        "url": "https://ringsdb.com/bundles/cards/131012.png"
+    },
+    {
+        "tempo_segundos": 4646,
+        "nome": "Spare Hood and Cloak",
+        "url": "https://ringsdb.com/bundles/cards/131012.png"
+    },
+    {
+        "tempo_segundos": 4709,
         "nome": "Bartering",
         "url": "https://ringsdb.com/bundles/cards/18015.png"
     },
     {
-        "tempo_segundos": 4713,
-        "nome": "Bartering",
-        "url": "https://ringsdb.com/bundles/cards/18015.png"
-    },
-    {
-        "tempo_segundos": 4821,
+        "tempo_segundos": 4818,
         "nome": "Hasty Stroke",
         "url": "https://ringsdb.com/bundles/cards/01048.png"
     },
     {
-        "tempo_segundos": 4825,
+        "tempo_segundos": 4839,
         "nome": "Hasty Stroke",
         "url": "https://ringsdb.com/bundles/cards/01048.png"
     },
     {
-        "tempo_segundos": 4835,
-        "nome": "Hasty Stroke",
-        "url": "https://ringsdb.com/bundles/cards/01048.png"
-    },
-    {
-        "tempo_segundos": 4880,
+        "tempo_segundos": 4879,
         "nome": "North Realm Lookout",
         "url": "https://ringsdb.com/bundles/cards/18004.png"
     },
     {
-        "tempo_segundos": 5041,
-        "nome": "Open The Armory",
+        "tempo_segundos": 4957,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
+    },
+    {
+        "tempo_segundos": 5042,
+        "nome": "Open the Armory",
         "url": "https://ringsdb.com/bundles/cards/17118.png"
     },
     {
@@ -250,23 +285,23 @@
         "url": "https://ringsdb.com/bundles/cards/01133.png"
     },
     {
-        "tempo_segundos": 5063,
+        "tempo_segundos": 5060,
         "nome": "Valor",
         "url": "https://ringsdb.com/bundles/cards/01133.png"
     },
     {
-        "tempo_segundos": 5092,
+        "tempo_segundos": 5089,
         "nome": "Valor",
         "url": "https://ringsdb.com/bundles/cards/01133.png"
     },
     {
-        "tempo_segundos": 5131,
-        "nome": "Traffic From Dale",
+        "tempo_segundos": 5132,
+        "nome": "Traffic from Dale",
         "url": "https://ringsdb.com/bundles/cards/18012.png"
     },
     {
         "tempo_segundos": 5161,
-        "nome": "Traffic From Dale",
+        "nome": "Traffic from Dale",
         "url": "https://ringsdb.com/bundles/cards/18012.png"
     },
     {
@@ -276,66 +311,66 @@
     },
     {
         "tempo_segundos": 5272,
-        "nome": "Traffic From Dale",
+        "nome": "Traffic from Dale",
         "url": "https://ringsdb.com/bundles/cards/18012.png"
     },
     {
-        "tempo_segundos": 5462,
+        "tempo_segundos": 5464,
         "nome": "Drinking Song",
         "url": "https://ringsdb.com/bundles/cards/19116.png"
     },
     {
-        "tempo_segundos": 5473,
-        "nome": "King Of Dale",
+        "tempo_segundos": 5475,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
-        "tempo_segundos": 5478,
+        "tempo_segundos": 5486,
         "nome": "Drinking Song",
         "url": "https://ringsdb.com/bundles/cards/19116.png"
     },
     {
-        "tempo_segundos": 5489,
-        "nome": "Drinking Song",
-        "url": "https://ringsdb.com/bundles/cards/19116.png"
-    },
-    {
-        "tempo_segundos": 5569,
-        "nome": "King Of Dale",
+        "tempo_segundos": 5579,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
-        "tempo_segundos": 5581,
-        "nome": "Song Of Healing",
+        "tempo_segundos": 5579,
+        "nome": "Song of Healing",
         "url": "https://ringsdb.com/bundles/cards/22112.png"
     },
     {
-        "tempo_segundos": 5599,
-        "nome": "King Of Dale",
+        "tempo_segundos": 5598,
+        "nome": "King of Dale",
         "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
         "tempo_segundos": 5613,
-        "nome": "Song Of Hope",
+        "nome": "Song of Hope",
         "url": "https://ringsdb.com/bundles/cards/17082.png"
     },
     {
         "tempo_segundos": 5613,
-        "nome": "Song Of Healing",
+        "nome": "Song of Healing",
         "url": "https://ringsdb.com/bundles/cards/22112.png"
     },
     {
-        "tempo_segundos": 5673,
+        "tempo_segundos": 5674,
         "nome": "Ancestral Armor",
         "url": "https://ringsdb.com/bundles/cards/19028.png"
     },
     {
-        "tempo_segundos": 5736,
-        "nome": "Drinking Song",
-        "url": "https://ringsdb.com/bundles/cards/19116.png"
+        "tempo_segundos": 6161,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6343,
+        "tempo_segundos": 6310,
+        "nome": "Sting",
+        "url": "https://ringsdb.com/bundles/cards/503010.png"
+    },
+    {
+        "tempo_segundos": 6345,
         "nome": "Second Breakfast",
         "url": "https://ringsdb.com/bundles/cards/02027.png"
     }
