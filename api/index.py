@@ -17,7 +17,7 @@ def home():
 def get_timeline():
     try:
         caminho_pasta = os.path.dirname(__file__)
-        caminho_arquivo = os.path.join(caminho_pasta, 'timeline.json')
+        caminho_arquivo = os.path.join(caminho_pasta, 'timeline_227.json')
         
         with open(caminho_arquivo, 'r', encoding='utf-8') as arquivo:
             dados_reais = json.load(arquivo)
