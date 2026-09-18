@@ -31,9 +31,8 @@
             font-size: 1.2em;
         }
 
-        /* --- Estilos do Carrossel --- */
         .carousel {
-            position: relative; /* <-- A MÁGICA ESTÁ AQUI: Transforma o carrossel na nossa régua de medida */
+            position: relative; 
             display: flex;
             overflow-x: auto;
             gap: 30px; 
@@ -48,7 +47,7 @@
             display: none;
         }
 
-        /* --- Estilo de cada Carta --- */
+        /* --- Estilo Base da Carta --- */
         .card-item {
             flex: 0 0 auto; 
             width: 280px; 
@@ -66,6 +65,7 @@
             margin-top: 15px;
             font-size: 1.1em;
             color: #ccc;
+            transition: color 0.4s ease; /* Transição suave de cor */
         }
         .card-time {
             font-size: 0.9em;
@@ -78,17 +78,21 @@
             font-family: monospace; 
         }
 
-        /* --- Estilo da Carta ATIVA --- */
+        /* --- Estilo da Carta ATIVA (Usando a Variável de Cor) --- */
         .card-item.active {
             opacity: 1;
             transform: scale(1.15); 
-            filter: drop-shadow(0 0 20px rgba(238, 187, 85, 0.6)); 
+            /* O Drop-shadow agora puxa a cor exata da esfera injetada no JS */
+            filter: drop-shadow(0 0 25px var(--glow-color)); 
             z-index: 10;
         }
+        
         .card-item.active .card-name {
-            color: #eebb55;
+            /* O nome da carta também ganha a cor da esfera! */
+            color: var(--glow-color);
             font-weight: bold;
             font-size: 1.2em;
+            text-shadow: 0 0 8px var(--glow-color); /* E um leve brilho no texto */
         }
     </style>
 </head>
@@ -97,7 +101,6 @@
     <div class="player-container">
         <h2>Episódio 227</h2>
         
-        <!-- Áudio Oficial do Podcast -->
         <audio id="podcast-audio" controls style="width: 100%;">
             <source src="https://traffic.libsyn.com/cotr/Episode_227_-_QC.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
@@ -128,6 +131,21 @@
             return `${hh}:${mm}:${ss}`;
         }
 
+        // Função para converter o nome da esfera nas cores oficiais do LOTR LCG
+        function pegarCorDaEsfera(esfera) {
+            const cores = {
+                'leadership': '#800080', // Roxo
+                'tactics': '#cc0000',    // Vermelho 
+                'spirit': '#0096ff',     // Azul
+                'lore': '#228b22',       // Verde
+                'neutral': '#a9a9a9',    // Cinza
+                'fellowship': '#eebb55', // Dourado
+                'baggins': '#eebb55'     // Dourado
+            };
+            // Se não encontrar, retorna dourado como padrão
+            return cores[esfera?.toLowerCase()] || '#eebb55';
+        }
+
         fetch('/api/timeline')
             .then(response => {
                 if (!response.ok) throw new Error(`Erro: ${response.status}`);
@@ -141,6 +159,9 @@
                     const cardDiv = document.createElement('div');
                     cardDiv.className = 'card-item';
                     cardDiv.id = `card-${index}`;
+                    
+                    // Injeta a variável CSS com a cor da esfera específica desta carta
+                    cardDiv.style.setProperty('--glow-color', pegarCorDaEsfera(carta.esfera));
                     
                     cardDiv.innerHTML = `
                         <img src="${carta.url}" alt="${carta.nome}">
@@ -189,7 +210,6 @@
                     if (cartaNova) {
                         cartaNova.classList.add('active');
                         
-                        // Cálculo matemático com as medidas corretas do carrossel (clientWidth)
                         const posicaoCentro = cartaNova.offsetLeft - (carousel.clientWidth / 2) + (cartaNova.clientWidth / 2);
                         
                         carousel.scrollTo({
