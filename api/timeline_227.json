@@ -1,36 +1,36 @@
 [
     {
-        "tempo_segundos": 280,
-        "nome": "Fellowship",
-        "url": "https://ringsdb.com/bundles/cards/21074.png"
-    },
-    {
-        "tempo_segundos": 293,
+        "tempo_segundos": 274,
         "nome": "Fellowship of the Ring",
         "url": "https://ringsdb.com/bundles/cards/142010.png"
     },
     {
-        "tempo_segundos": 293,
+        "tempo_segundos": 274,
         "nome": "Fellowship",
         "url": "https://ringsdb.com/bundles/cards/21074.png"
     },
     {
-        "tempo_segundos": 549,
+        "tempo_segundos": 286,
+        "nome": "Fellowship of the Ring",
+        "url": "https://ringsdb.com/bundles/cards/142010.png"
+    },
+    {
+        "tempo_segundos": 286,
+        "nome": "Fellowship",
+        "url": "https://ringsdb.com/bundles/cards/21074.png"
+    },
+    {
+        "tempo_segundos": 534,
         "nome": "Followed",
         "url": "https://ringsdb.com/bundles/cards/17139.png"
     },
     {
-        "tempo_segundos": 850,
+        "tempo_segundos": 842,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 1330,
-        "nome": "Aragorn",
-        "url": "https://ringsdb.com/bundles/cards/306183.png"
-    },
-    {
-        "tempo_segundos": 1722,
+        "tempo_segundos": 1715,
         "nome": "Denethor",
         "url": "https://ringsdb.com/bundles/cards/12001.png"
     },
@@ -40,232 +40,197 @@
         "url": "https://ringsdb.com/bundles/cards/17058.png"
     },
     {
-        "tempo_segundos": 1779,
+        "tempo_segundos": 1776,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 1803,
+        "tempo_segundos": 1797,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2028,
+        "tempo_segundos": 2019,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 2029,
+        "tempo_segundos": 2036,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 2030,
+        "tempo_segundos": 2061,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 2031,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png"
-    },
-    {
-        "tempo_segundos": 2049,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png"
-    },
-    {
-        "tempo_segundos": 2065,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png"
-    },
-    {
-        "tempo_segundos": 2087,
+        "tempo_segundos": 2077,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2349,
+        "tempo_segundos": 2346,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 2361,
+        "tempo_segundos": 2392,
+        "nome": "The One Ring",
+        "url": "https://ringsdb.com/bundles/cards/21001.png"
+    },
+    {
+        "tempo_segundos": 2400,
+        "nome": "The One Ring",
+        "url": "https://ringsdb.com/bundles/cards/21001.png"
+    },
+    {
+        "tempo_segundos": 2409,
+        "nome": "The One Ring",
+        "url": "https://ringsdb.com/bundles/cards/21001.png"
+    },
+    {
+        "tempo_segundos": 2427,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 2391,
-        "nome": "The One Ring",
-        "url": "https://ringsdb.com/bundles/cards/21001.png"
-    },
-    {
-        "tempo_segundos": 2401,
-        "nome": "The One Ring",
-        "url": "https://ringsdb.com/bundles/cards/21001.png"
-    },
-    {
-        "tempo_segundos": 2411,
-        "nome": "The One Ring",
-        "url": "https://ringsdb.com/bundles/cards/21001.png"
-    },
-    {
-        "tempo_segundos": 2437,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png"
-    },
-    {
-        "tempo_segundos": 2496,
+        "tempo_segundos": 2491,
         "nome": "Goldberry",
         "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
-        "tempo_segundos": 2533,
+        "tempo_segundos": 2532,
         "nome": "Goldberry",
         "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
-        "tempo_segundos": 2574,
+        "tempo_segundos": 2573,
         "nome": "Song of Kings",
         "url": "https://ringsdb.com/bundles/cards/02010.png"
     },
     {
-        "tempo_segundos": 2574,
+        "tempo_segundos": 2573,
         "nome": "Song of Wisdom",
         "url": "https://ringsdb.com/bundles/cards/02034.png"
     },
     {
-        "tempo_segundos": 2636,
+        "tempo_segundos": 2635,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2665,
+        "tempo_segundos": 2658,
         "nome": "Eleanor",
         "url": "https://ringsdb.com/bundles/cards/01008.png"
     },
     {
-        "tempo_segundos": 2665,
+        "tempo_segundos": 2668,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2810,
+        "tempo_segundos": 2805,
         "nome": "Goldberry",
         "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
-        "tempo_segundos": 2822,
+        "tempo_segundos": 2815,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2844,
+        "tempo_segundos": 2836,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2848,
+        "tempo_segundos": 2847,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 2912,
+        "tempo_segundos": 2910,
         "nome": "Goldberry",
         "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
-        "tempo_segundos": 2925,
+        "tempo_segundos": 2923,
         "nome": "An Unexpected Party",
         "url": "https://ringsdb.com/bundles/cards/307005.png"
     },
     {
-        "tempo_segundos": 3109,
+        "tempo_segundos": 3103,
         "nome": "Losing Time",
         "url": "https://ringsdb.com/bundles/cards/10183.png"
     },
     {
-        "tempo_segundos": 3109,
+        "tempo_segundos": 3103,
         "nome": "Goldberry",
         "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
-        "tempo_segundos": 3133,
-        "nome": "Drinking Song",
-        "url": "https://ringsdb.com/bundles/cards/19116.png"
-    },
-    {
-        "tempo_segundos": 3137,
+        "tempo_segundos": 3127,
         "nome": "Silver Harp",
         "url": "https://ringsdb.com/bundles/cards/10090.png"
     },
     {
-        "tempo_segundos": 3193,
+        "tempo_segundos": 3127,
+        "nome": "Drinking Song",
+        "url": "https://ringsdb.com/bundles/cards/19116.png"
+    },
+    {
+        "tempo_segundos": 3186,
         "nome": "An Unexpected Party",
         "url": "https://ringsdb.com/bundles/cards/307005.png"
     },
     {
-        "tempo_segundos": 3285,
+        "tempo_segundos": 3269,
         "nome": "Song of Slumber",
         "url": "https://ringsdb.com/bundles/cards/307006.png"
     },
     {
-        "tempo_segundos": 3294,
-        "nome": "Song of Slumber",
-        "url": "https://ringsdb.com/bundles/cards/307006.png"
-    },
-    {
-        "tempo_segundos": 3457,
+        "tempo_segundos": 3456,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 3536,
+        "tempo_segundos": 3534,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 3544,
+        "tempo_segundos": 3534,
         "nome": "Bartering",
         "url": "https://ringsdb.com/bundles/cards/18015.png"
     },
     {
-        "tempo_segundos": 3551,
+        "tempo_segundos": 3534,
         "nome": "Wild Stallion",
         "url": "https://ringsdb.com/bundles/cards/19033.png"
     },
     {
-        "tempo_segundos": 3552,
-        "nome": "Sting",
-        "url": "https://ringsdb.com/bundles/cards/503010.png"
-    },
-    {
-        "tempo_segundos": 3679,
+        "tempo_segundos": 3669,
         "nome": "Song of Slumber",
         "url": "https://ringsdb.com/bundles/cards/307006.png"
     },
     {
-        "tempo_segundos": 3792,
+        "tempo_segundos": 3787,
         "nome": "Songs of Slaying",
         "url": "https://ringsdb.com/bundles/cards/307007.png"
     },
     {
-        "tempo_segundos": 3990,
+        "tempo_segundos": 3985,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 4130,
-        "nome": "Courage Awakened",
-        "url": "https://ringsdb.com/bundles/cards/08061.png"
-    },
-    {
-        "tempo_segundos": 4176,
+        "tempo_segundos": 4174,
         "nome": "Gandalf",
         "url": "https://ringsdb.com/bundles/cards/142002.png"
     },
     {
-        "tempo_segundos": 4176,
+        "tempo_segundos": 4174,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
@@ -275,52 +240,47 @@
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 4282,
-        "nome": "Sting",
-        "url": "https://ringsdb.com/bundles/cards/503010.png"
-    },
-    {
-        "tempo_segundos": 4586,
+        "tempo_segundos": 4571,
         "nome": "Gimli",
         "url": "https://ringsdb.com/bundles/cards/16001.png"
     },
     {
-        "tempo_segundos": 4608,
+        "tempo_segundos": 4610,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 4625,
-        "nome": "Sting",
-        "url": "https://ringsdb.com/bundles/cards/503010.png"
-    },
-    {
-        "tempo_segundos": 4636,
+        "tempo_segundos": 4635,
         "nome": "Second Breakfast",
         "url": "https://ringsdb.com/bundles/cards/02027.png"
     },
     {
-        "tempo_segundos": 4645,
+        "tempo_segundos": 4635,
         "nome": "Elrond",
         "url": "https://ringsdb.com/bundles/cards/142005.png"
     },
     {
-        "tempo_segundos": 4645,
-        "nome": "Fellowship",
-        "url": "https://ringsdb.com/bundles/cards/21074.png"
-    },
-    {
-        "tempo_segundos": 4649,
+        "tempo_segundos": 4635,
         "nome": "Strider",
         "url": "https://ringsdb.com/bundles/cards/12091.png"
     },
     {
-        "tempo_segundos": 4718,
+        "tempo_segundos": 4635,
+        "nome": "Fellowship",
+        "url": "https://ringsdb.com/bundles/cards/21074.png"
+    },
+    {
+        "tempo_segundos": 4711,
         "nome": "Fatty Lumpkin",
         "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
-        "tempo_segundos": 4765,
+        "tempo_segundos": 4734,
+        "nome": "Fatty Lumpkin",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
+    },
+    {
+        "tempo_segundos": 4759,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
@@ -330,47 +290,57 @@
         "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
-        "tempo_segundos": 4798,
+        "tempo_segundos": 4795,
         "nome": "Fast Hitch",
         "url": "https://ringsdb.com/bundles/cards/02103.png"
     },
     {
-        "tempo_segundos": 4863,
+        "tempo_segundos": 4804,
+        "nome": "Elfhelm",
+        "url": "https://ringsdb.com/bundles/cards/146006.png"
+    },
+    {
+        "tempo_segundos": 4853,
         "nome": "Fatty Lumpkin",
         "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
-        "tempo_segundos": 4870,
+        "tempo_segundos": 4865,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 4917,
+        "tempo_segundos": 4877,
         "nome": "Fatty Lumpkin",
         "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
-        "tempo_segundos": 4954,
+        "tempo_segundos": 4912,
         "nome": "Fatty Lumpkin",
         "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
-        "tempo_segundos": 4967,
+        "tempo_segundos": 4943,
+        "nome": "Fatty Lumpkin",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
+    },
+    {
+        "tempo_segundos": 4959,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 5072,
+        "tempo_segundos": 5066,
         "nome": "Song of Kings",
         "url": "https://ringsdb.com/bundles/cards/02010.png"
     },
     {
-        "tempo_segundos": 5171,
+        "tempo_segundos": 5169,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 5251,
+        "tempo_segundos": 5250,
         "nome": "Sneak Attack",
         "url": "https://ringsdb.com/bundles/cards/01023.png"
     },
@@ -390,142 +360,152 @@
         "url": "https://ringsdb.com/bundles/cards/142002.png"
     },
     {
-        "tempo_segundos": 5312,
+        "tempo_segundos": 5311,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 5325,
+        "tempo_segundos": 5321,
         "nome": "Fatty Lumpkin",
         "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
-        "tempo_segundos": 5328,
-        "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png"
-    },
-    {
-        "tempo_segundos": 5554,
+        "tempo_segundos": 5555,
         "nome": "Northern Tracker",
         "url": "https://ringsdb.com/bundles/cards/01045.png"
     },
     {
-        "tempo_segundos": 5557,
-        "nome": "Northern Tracker",
-        "url": "https://ringsdb.com/bundles/cards/01045.png"
-    },
-    {
-        "tempo_segundos": 5659,
-        "nome": "Bilbo's Walking Song",
-        "url": "https://ringsdb.com/bundles/cards/307015.png"
-    },
-    {
-        "tempo_segundos": 5699,
+        "tempo_segundos": 5694,
         "nome": "Let Us Sing Together",
         "url": "https://ringsdb.com/bundles/cards/307016.png"
     },
     {
-        "tempo_segundos": 5703,
+        "tempo_segundos": 5702,
         "nome": "Let Us Sing Together",
         "url": "https://ringsdb.com/bundles/cards/307016.png"
     },
     {
-        "tempo_segundos": 5762,
+        "tempo_segundos": 5756,
         "nome": "Gandalf",
         "url": "https://ringsdb.com/bundles/cards/142002.png"
     },
     {
-        "tempo_segundos": 5804,
+        "tempo_segundos": 5800,
         "nome": "Sméagol",
         "url": "https://ringsdb.com/bundles/cards/21072.png"
     },
     {
-        "tempo_segundos": 5805,
+        "tempo_segundos": 5806,
         "nome": "Sméagol",
         "url": "https://ringsdb.com/bundles/cards/21072.png"
     },
     {
-        "tempo_segundos": 5824,
+        "tempo_segundos": 5828,
         "nome": "Drinking Song",
         "url": "https://ringsdb.com/bundles/cards/19116.png"
     },
     {
-        "tempo_segundos": 5846,
+        "tempo_segundos": 5834,
+        "nome": "Beorn",
+        "url": "https://ringsdb.com/bundles/cards/131005.png"
+    },
+    {
+        "tempo_segundos": 5838,
         "nome": "Saruman",
         "url": "https://ringsdb.com/bundles/cards/309038.png"
     },
     {
-        "tempo_segundos": 5857,
+        "tempo_segundos": 5847,
+        "nome": "Saruman",
+        "url": "https://ringsdb.com/bundles/cards/309038.png"
+    },
+    {
+        "tempo_segundos": 5853,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 5885,
+        "tempo_segundos": 5884,
         "nome": "Loyal Hound",
         "url": "https://ringsdb.com/bundles/cards/19148.png"
     },
     {
-        "tempo_segundos": 5937,
+        "tempo_segundos": 5930,
         "nome": "Goldberry",
         "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
-        "tempo_segundos": 6034,
+        "tempo_segundos": 6028,
         "nome": "Let Us Sing Together",
         "url": "https://ringsdb.com/bundles/cards/307016.png"
     },
     {
-        "tempo_segundos": 6058,
+        "tempo_segundos": 6048,
+        "nome": "Balin",
+        "url": "https://ringsdb.com/bundles/cards/304104.png"
+    },
+    {
+        "tempo_segundos": 6056,
         "nome": "Lamenter of the Lost",
         "url": "https://ringsdb.com/bundles/cards/307017.png"
     },
     {
-        "tempo_segundos": 6071,
+        "tempo_segundos": 6068,
         "nome": "Lamenter of the Lost",
         "url": "https://ringsdb.com/bundles/cards/307017.png"
     },
     {
-        "tempo_segundos": 6161,
+        "tempo_segundos": 6160,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6169,
+        "tempo_segundos": 6167,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6544,
+        "tempo_segundos": 6436,
+        "nome": "Fatty Lumpkin",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
+    },
+    {
+        "tempo_segundos": 6440,
+        "nome": "Booming Ent",
+        "url": "https://ringsdb.com/bundles/cards/08141.png"
+    },
+    {
+        "tempo_segundos": 6545,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 6544,
+        "tempo_segundos": 6545,
         "nome": "Goldberry",
         "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
-        "tempo_segundos": 6551,
+        "tempo_segundos": 6550,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 6595,
+        "tempo_segundos": 6593,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6601,
+        "tempo_segundos": 6600,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6610,
+        "tempo_segundos": 6607,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6620,
+        "tempo_segundos": 6618,
         "nome": "The Last Alliance",
         "url": "https://ringsdb.com/bundles/cards/300085.png"
     },
@@ -540,17 +520,17 @@
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6643,
+        "tempo_segundos": 6640,
         "nome": "Fellowship",
         "url": "https://ringsdb.com/bundles/cards/21074.png"
     },
     {
-        "tempo_segundos": 6645,
+        "tempo_segundos": 6644,
         "nome": "Elrond",
         "url": "https://ringsdb.com/bundles/cards/142005.png"
     },
     {
-        "tempo_segundos": 6648,
+        "tempo_segundos": 6644,
         "nome": "Fellowship",
         "url": "https://ringsdb.com/bundles/cards/21074.png"
     },
@@ -565,47 +545,37 @@
         "url": "https://ringsdb.com/bundles/cards/01029.png"
     },
     {
-        "tempo_segundos": 6700,
+        "tempo_segundos": 6701,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6814,
+        "tempo_segundos": 6811,
         "nome": "Sting",
         "url": "https://ringsdb.com/bundles/cards/503010.png"
     },
     {
-        "tempo_segundos": 6906,
-        "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png"
-    },
-    {
-        "tempo_segundos": 6917,
+        "tempo_segundos": 6913,
         "nome": "Round Shield",
         "url": "https://ringsdb.com/bundles/cards/19118.png"
     },
     {
-        "tempo_segundos": 6921,
+        "tempo_segundos": 6919,
         "nome": "Round Shield",
         "url": "https://ringsdb.com/bundles/cards/19118.png"
     },
     {
-        "tempo_segundos": 6924,
+        "tempo_segundos": 6923,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 6955,
+        "tempo_segundos": 6953,
         "nome": "Round Shield",
         "url": "https://ringsdb.com/bundles/cards/19118.png"
     },
     {
         "tempo_segundos": 6958,
-        "nome": "Round Shield",
-        "url": "https://ringsdb.com/bundles/cards/19118.png"
-    },
-    {
-        "tempo_segundos": 6960,
         "nome": "Tom Bombadil",
         "url": "https://ringsdb.com/bundles/cards/307002.png"
     }
