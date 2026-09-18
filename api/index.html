@@ -12,34 +12,80 @@
             background-color: #1a1a1a;
             color: #f1f1f1;
             padding: 40px;
+            margin: 0;
         }
         .player-container {
             background: #2a2a2a;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             text-align: center;
             width: 100%;
-            max-width: 500px;
+            max-width: 800px; /* Aumentei o espaço para o carrossel caber bem */
         }
-        #card-display {
-            margin-top: 20px;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #card-image {
-            max-height: 100%;
-            max-width: 100%;
-            border-radius: 8px;
-            display: none; 
-        }
-        #card-name {
-            margin-top: 10px;
+        
+        #status-message {
+            margin: 15px 0;
             font-weight: bold;
-            color: #eebb55; 
+            color: #eebb55;
+        }
+
+        /* --- Estilos do Carrossel --- */
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 30px 10px;
+            scroll-behavior: smooth;
+            width: 100%;
+            
+            /* Esconde a barra de rolagem para ficar mais bonito */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* --- Estilo de cada Carta --- */
+        .card-item {
+            flex: 0 0 auto; /* Impede a carta de encolher */
+            width: 180px;
+            opacity: 0.4; /* Cartas inativas ficam meio transparentes */
+            transform: scale(0.9);
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+        }
+        .card-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .card-name {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .card-time {
+            font-size: 0.8em;
+            color: #888;
+            background: #111;
+            padding: 3px 8px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        /* --- Estilo da Carta ATIVA --- */
+        .card-item.active {
+            opacity: 1;
+            transform: scale(1.15); /* A carta ativa cresce na tela */
+            filter: drop-shadow(0 0 15px rgba(238, 187, 85, 0.6)); /* Brilho dourado */
+            z-index: 10;
+        }
+        .card-item.active .card-name {
+            color: #eebb55;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -48,52 +94,74 @@
     <div class="player-container">
         <h2>Episódio 257</h2>
         
-        <!-- IMPORTANTE: Quando for testar com os dados reais, troque o 'src' abaixo para o link do MP3 do podcast -->
-        <audio id="podcast-audio" controls>
+        <!-- O Áudio (Lembre-se de colocar o link do episódio real aqui) -->
+        <audio id="podcast-audio" controls style="width: 100%;">
             <source src="https://traffic.libsyn.com/cotr/Episode_227_-_QC.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
 
-        <div id="card-display">
-            <img id="card-image" src="" alt="Imagem da carta">
-            <div id="card-name">Carregando dados do servidor Python...</div>
-        </div>
+        <div id="status-message">Carregando linha do tempo...</div>
+
+        <!-- O Carrossel onde as cartas vão entrar dinamicamente -->
+        <div id="carousel-container" class="carousel"></div>
     </div>
 
     <script>
         let timelineCartas = [];
-        const cardName = document.getElementById('card-name');
-        const cardImage = document.getElementById('card-image');
-        const audioPlayer = document.getElementById('podcast-audio');
         let cartaAtualIndex = -1;
+        
+        const statusMessage = document.getElementById('status-message');
+        const carousel = document.getElementById('carousel-container');
+        const audioPlayer = document.getElementById('podcast-audio');
+
+        // Função simples para formatar os segundos em MM:SS
+        function formatarTempo(segundos) {
+            const min = Math.floor(segundos / 60);
+            const seg = Math.floor(segundos % 60);
+            return `${min}:${seg.toString().padStart(2, '0')}`;
+        }
 
         // 1. Busca os dados reais na sua API da Vercel
         fetch('/api/timeline')
             .then(response => {
-                // Checa se a resposta da rede foi bem sucedida (código 200)
-                if (!response.ok) {
-                    throw new Error(`Erro de rede: status ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`Erro: ${response.status}`);
                 return response.json();
             })
-            .then(dadosDoPython => {
-                timelineCartas = dadosDoPython;
-                cardName.textContent = "Dados carregados! Aperte o Play.";
+            .then(dados => {
+                timelineCartas = dados;
+                statusMessage.textContent = `${timelineCartas.length} cartas sincronizadas. Aperte o Play!`;
                 
-                // Esta é a linha que vai imprimir no seu Console (F12)
-                console.log("Cartas carregadas:", timelineCartas);
+                // Cria as cartas dentro do carrossel
+                timelineCartas.forEach((carta, index) => {
+                    const cardDiv = document.createElement('div');
+                    cardDiv.className = 'card-item';
+                    cardDiv.id = `card-${index}`;
+                    
+                    cardDiv.innerHTML = `
+                        <img src="${carta.url}" alt="${carta.nome}">
+                        <div class="card-name">${carta.nome}</div>
+                        <div class="card-time">${formatarTempo(carta.tempo_segundos)}</div>
+                    `;
+
+                    // Permite que o usuário clique na carta para pular o áudio para aquele momento
+                    cardDiv.addEventListener('click', () => {
+                        audioPlayer.currentTime = carta.tempo_segundos;
+                        audioPlayer.play();
+                    });
+
+                    carousel.appendChild(cardDiv);
+                });
             })
             .catch(erro => {
-                console.error("Erro ao conectar com a API:", erro);
-                cardName.textContent = "Erro ao carregar as cartas da API.";
+                console.error("Erro:", erro);
+                statusMessage.textContent = "Erro ao carregar a timeline.";
             });
 
-        // 2. Ouve o relógio do áudio e sincroniza as imagens
+        // 2. Sincroniza o carrossel com o áudio
         audioPlayer.addEventListener('timeupdate', () => {
             if (timelineCartas.length === 0) return;
 
             const tempoAtual = audioPlayer.currentTime;
-            
             let indexCorreto = -1;
             
             for (let i = 0; i < timelineCartas.length; i++) {
@@ -104,19 +172,30 @@
                 }
             }
 
-            // Só atualiza a tela se a carta tiver mudado
+            // Se o index mudou (avançamos para a próxima carta ou o usuário clicou na linha do tempo)
             if (indexCorreto !== cartaAtualIndex) {
+                
+                // Remove a classe 'active' da carta anterior
+                if (cartaAtualIndex !== -1) {
+                    const cartaAntiga = document.getElementById(`card-${cartaAtualIndex}`);
+                    if (cartaAntiga) cartaAntiga.classList.remove('active');
+                }
+
                 cartaAtualIndex = indexCorreto;
 
+                // Adiciona a classe 'active' na nova carta e faz o carrossel rolar até ela
                 if (cartaAtualIndex !== -1) {
-                    const cartaDaVez = timelineCartas[cartaAtualIndex];
-                    cardImage.src = cartaDaVez.url;
-                    cardImage.style.display = 'block';
-                    cardName.textContent = cartaDaVez.nome;
-                } else {
-                    cardImage.style.display = 'none';
-                    cardImage.src = '';
-                    cardName.textContent = 'Aguardando menção de cartas...';
+                    const cartaNova = document.getElementById(`card-${cartaAtualIndex}`);
+                    if (cartaNova) {
+                        cartaNova.classList.add('active');
+                        
+                        // Faz o scroll automático e centraliza a carta na tela!
+                        cartaNova.scrollIntoView({
+                            behavior: 'smooth',
+                            inline: 'center',
+                            block: 'nearest'
+                        });
+                    }
                 }
             }
         });
