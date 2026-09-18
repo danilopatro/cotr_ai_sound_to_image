@@ -33,6 +33,7 @@
 
         /* --- Estilos do Carrossel --- */
         .carousel {
+            position: relative; /* <-- A MÁGICA ESTÁ AQUI: Transforma o carrossel na nossa régua de medida */
             display: flex;
             overflow-x: auto;
             gap: 30px; 
@@ -115,7 +116,6 @@
         const carousel = document.getElementById('carousel-container');
         const audioPlayer = document.getElementById('podcast-audio');
 
-        // Formatação de tempo em HH:MM:SS
         function formatarTempo(segundosTotais) {
             const horas = Math.floor(segundosTotais / 3600);
             const minutos = Math.floor((segundosTotais % 3600) / 60);
@@ -128,7 +128,6 @@
             return `${hh}:${mm}:${ss}`;
         }
 
-        // Busca os dados na API
         fetch('/api/timeline')
             .then(response => {
                 if (!response.ok) throw new Error(`Erro: ${response.status}`);
@@ -149,7 +148,6 @@
                         <div class="card-time">${formatarTempo(carta.tempo_segundos)}</div>
                     `;
 
-                    // Ao clicar na carta, o áudio pula para o tempo dela
                     cardDiv.addEventListener('click', () => {
                         audioPlayer.currentTime = carta.tempo_segundos;
                         audioPlayer.play();
@@ -163,7 +161,6 @@
                 statusMessage.textContent = "Erro ao carregar a timeline.";
             });
 
-        // Sincroniza as imagens e rola o carrossel sem pular a tela
         audioPlayer.addEventListener('timeupdate', () => {
             if (timelineCartas.length === 0) return;
 
@@ -192,8 +189,8 @@
                     if (cartaNova) {
                         cartaNova.classList.add('active');
                         
-                        // Cálculo matemático para rolar apenas a barra horizontal do carrossel
-                        const posicaoCentro = cartaNova.offsetLeft - (carousel.offsetWidth / 2) + (cartaNova.offsetWidth / 2);
+                        // Cálculo matemático com as medidas corretas do carrossel (clientWidth)
+                        const posicaoCentro = cartaNova.offsetLeft - (carousel.clientWidth / 2) + (cartaNova.clientWidth / 2);
                         
                         carousel.scrollTo({
                             left: posicaoCentro,
