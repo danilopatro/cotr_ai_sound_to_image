@@ -21,7 +21,6 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             text-align: center;
             width: 100%;
-            /* 1. Aumentamos o container de 800px para 1000px para caber as cartas grandes */
             max-width: 1000px; 
         }
         
@@ -36,8 +35,7 @@
         .carousel {
             display: flex;
             overflow-x: auto;
-            gap: 30px; /* Mais espaço entre as cartas */
-            /* 2. Mais padding vertical (60px) para a carta não ser cortada quando der o zoom */
+            gap: 30px; 
             padding: 60px 20px; 
             scroll-behavior: smooth;
             width: 100%;
@@ -52,7 +50,6 @@
         /* --- Estilo de cada Carta --- */
         .card-item {
             flex: 0 0 auto; 
-            /* 3. Aumentamos a carta de 180px para 280px */
             width: 280px; 
             opacity: 0.4; 
             transform: scale(0.9);
@@ -77,12 +74,12 @@
             border-radius: 15px;
             display: inline-block;
             margin-top: 8px;
+            font-family: monospace; /* Fonte monoespaçada fica melhor para relógios */
         }
 
         /* --- Estilo da Carta ATIVA --- */
         .card-item.active {
             opacity: 1;
-            /* Quando ativa, ela fica ainda maior (15% a mais que os 280px originais) */
             transform: scale(1.15); 
             filter: drop-shadow(0 0 20px rgba(238, 187, 85, 0.6)); 
             z-index: 10;
@@ -97,8 +94,9 @@
 <body>
 
     <div class="player-container">
-        <h2>Episódio 257</h2>
+        <h2>Episódio 227</h2>
         
+        <!-- Áudio Oficial do Podcast Atualizado -->
         <audio id="podcast-audio" controls style="width: 100%;">
             <source src="https://traffic.libsyn.com/cotr/Episode_227_-_QC.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
@@ -117,10 +115,18 @@
         const carousel = document.getElementById('carousel-container');
         const audioPlayer = document.getElementById('podcast-audio');
 
-        function formatarTempo(segundos) {
-            const min = Math.floor(segundos / 60);
-            const seg = Math.floor(segundos % 60);
-            return `${min}:${seg.toString().padStart(2, '0')}`;
+        // Função de formatação de tempo atualizada para HH:MM:SS
+        function formatarTempo(segundosTotais) {
+            const horas = Math.floor(segundosTotais / 3600);
+            const minutos = Math.floor((segundosTotais % 3600) / 60);
+            const segundos = Math.floor(segundosTotais % 60);
+            
+            // O padStart(2, '0') garante que números menores que 10 ganhem um zero à esquerda (ex: 09 em vez de 9)
+            const hh = horas.toString().padStart(2, '0');
+            const mm = minutos.toString().padStart(2, '0');
+            const ss = segundos.toString().padStart(2, '0');
+            
+            return `${hh}:${mm}:${ss}`;
         }
 
         fetch('/api/timeline')
