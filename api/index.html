@@ -74,7 +74,7 @@
             border-radius: 15px;
             display: inline-block;
             margin-top: 8px;
-            font-family: monospace; /* Fonte monoespaçada fica melhor para relógios */
+            font-family: monospace; 
         }
 
         /* --- Estilo da Carta ATIVA --- */
@@ -96,7 +96,7 @@
     <div class="player-container">
         <h2>Episódio 227</h2>
         
-        <!-- Áudio Oficial do Podcast Atualizado -->
+        <!-- Áudio Oficial do Podcast -->
         <audio id="podcast-audio" controls style="width: 100%;">
             <source src="https://traffic.libsyn.com/cotr/Episode_227_-_QC.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
@@ -115,13 +115,12 @@
         const carousel = document.getElementById('carousel-container');
         const audioPlayer = document.getElementById('podcast-audio');
 
-        // Função de formatação de tempo atualizada para HH:MM:SS
+        // Formatação de tempo em HH:MM:SS
         function formatarTempo(segundosTotais) {
             const horas = Math.floor(segundosTotais / 3600);
             const minutos = Math.floor((segundosTotais % 3600) / 60);
             const segundos = Math.floor(segundosTotais % 60);
             
-            // O padStart(2, '0') garante que números menores que 10 ganhem um zero à esquerda (ex: 09 em vez de 9)
             const hh = horas.toString().padStart(2, '0');
             const mm = minutos.toString().padStart(2, '0');
             const ss = segundos.toString().padStart(2, '0');
@@ -129,6 +128,7 @@
             return `${hh}:${mm}:${ss}`;
         }
 
+        // Busca os dados na API
         fetch('/api/timeline')
             .then(response => {
                 if (!response.ok) throw new Error(`Erro: ${response.status}`);
@@ -149,6 +149,7 @@
                         <div class="card-time">${formatarTempo(carta.tempo_segundos)}</div>
                     `;
 
+                    // Ao clicar na carta, o áudio pula para o tempo dela
                     cardDiv.addEventListener('click', () => {
                         audioPlayer.currentTime = carta.tempo_segundos;
                         audioPlayer.play();
@@ -162,6 +163,7 @@
                 statusMessage.textContent = "Erro ao carregar a timeline.";
             });
 
+        // Sincroniza as imagens e rola o carrossel sem pular a tela
         audioPlayer.addEventListener('timeupdate', () => {
             if (timelineCartas.length === 0) return;
 
@@ -176,8 +178,13 @@
                 }
             }
 
-            if (indexCorreto !== cartaAtualIndex) {                
+            if (indexCorreto !== cartaAtualIndex) {
                 
+                if (cartaAtualIndex !== -1) {
+                    const cartaAntiga = document.getElementById(`card-${cartaAtualIndex}`);
+                    if (cartaAntiga) cartaAntiga.classList.remove('active');
+                }
+
                 cartaAtualIndex = indexCorreto;
 
                 if (cartaAtualIndex !== -1) {
@@ -185,19 +192,15 @@
                     if (cartaNova) {
                         cartaNova.classList.add('active');
                         
-                        // --- O SEGREDO ESTÁ AQUI ---
-                        // Calcula a posição exata para deixar a carta no centro do carrossel
+                        // Cálculo matemático para rolar apenas a barra horizontal do carrossel
                         const posicaoCentro = cartaNova.offsetLeft - (carousel.offsetWidth / 2) + (cartaNova.offsetWidth / 2);
                         
-                        // Rola *apenas* o carrossel horizontalmente, sem mexer na tela do usuário
                         carousel.scrollTo({
                             left: posicaoCentro,
                             behavior: 'smooth'
                         });
                     }
                 }
-            }
-        });
             }
         });
     </script>
