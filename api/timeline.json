@@ -1,135 +1,177 @@
 [
     {
-        "tempo_segundos": 294,
-        "nome": "Fellowship of the Ring",
-        "url": "https://ringsdb.com/bundles/cards/142010.png",
-        "esfera": "fellowship"
+        "tempo_segundos": 620,
+        "nome": "Mendor",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/01135.png"
+    },
+    {
+        "tempo_segundos": 1126,
+        "nome": "Beravor",
+        "url": "https://ringsdb.com/bundles/cards/01012.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 1299,
+        "nome": "Guardian of Esgaroth",
+        "url": "https://ringsdb.com/bundles/cards/19002.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 1332,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1704,
+        "nome": "The Red Arrow",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/17058.png"
+    },
+    {
+        "tempo_segundos": 1715,
+        "nome": "Hirgon",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/17055.png"
+    },
+    {
+        "tempo_segundos": 1715,
+        "nome": "Théoden",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/143002.png"
     },
     {
         "tempo_segundos": 1724,
         "nome": "Denethor",
-        "url": "https://ringsdb.com/bundles/cards/12001.png",
-        "esfera": "leadership"
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/12001.png"
     },
     {
-        "tempo_segundos": 1767,
-        "nome": "The Red Arrow",
-        "url": "https://ringsdb.com/bundles/cards/17058.png",
-        "esfera": "tactics"
+        "tempo_segundos": 1746,
+        "nome": "Gúthwinë",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/146011.png"
     },
     {
         "tempo_segundos": 2028,
         "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 2032,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2048,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2064,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2349,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2361,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "tempo_segundos": 2191,
+        "nome": "The Tree People",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/08009.png"
     },
     {
         "tempo_segundos": 2392,
         "nome": "The One Ring",
-        "url": "https://ringsdb.com/bundles/cards/21001.png",
-        "esfera": "neutral"
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/21001.png"
     },
     {
-        "tempo_segundos": 2401,
-        "nome": "The One Ring",
-        "url": "https://ringsdb.com/bundles/cards/21001.png",
-        "esfera": "neutral"
-    },
-    {
-        "tempo_segundos": 2437,
+        "tempo_segundos": 2496,
         "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
         "tempo_segundos": 2496,
         "nome": "Goldberry",
-        "url": "https://ringsdb.com/bundles/cards/307003.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
         "tempo_segundos": 2574,
         "nome": "Song of Kings",
-        "url": "https://ringsdb.com/bundles/cards/02010.png",
-        "esfera": "neutral"
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/02010.png"
     },
     {
         "tempo_segundos": 2574,
         "nome": "Song of Wisdom",
-        "url": "https://ringsdb.com/bundles/cards/02034.png",
-        "esfera": "neutral"
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/02034.png"
     },
     {
-        "tempo_segundos": 2810,
+        "tempo_segundos": 2611,
+        "nome": "Bilbo Baggins",
+        "esfera": "baggins",
+        "url": "https://ringsdb.com/bundles/cards/503007.png"
+    },
+    {
+        "tempo_segundos": 2625,
+        "nome": "Gléowine",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/01062.png"
+    },
+    {
+        "tempo_segundos": 2664,
+        "nome": "Light of Valinor",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/04107.png"
+    },
+    {
+        "tempo_segundos": 2683,
+        "nome": "Glorfindel",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/304102.png"
+    },
+    {
+        "tempo_segundos": 2754,
+        "nome": "Lothíriel",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/22027.png"
+    },
+    {
+        "tempo_segundos": 2912,
         "nome": "Goldberry",
-        "url": "https://ringsdb.com/bundles/cards/307003.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307003.png"
     },
     {
         "tempo_segundos": 2926,
         "nome": "An Unexpected Party",
-        "url": "https://ringsdb.com/bundles/cards/307005.png",
-        "esfera": "leadership"
-    },
-    {
-        "tempo_segundos": 3109,
-        "nome": "Goldberry",
-        "url": "https://ringsdb.com/bundles/cards/307003.png",
-        "esfera": "spirit"
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/307005.png"
     },
     {
         "tempo_segundos": 3133,
         "nome": "Drinking Song",
-        "url": "https://ringsdb.com/bundles/cards/19116.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/19116.png"
+    },
+    {
+        "tempo_segundos": 3133,
+        "nome": "Gléowine",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/01062.png"
     },
     {
         "tempo_segundos": 3137,
         "nome": "Silver Harp",
-        "url": "https://ringsdb.com/bundles/cards/10090.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/10090.png"
     },
     {
-        "tempo_segundos": 3193,
-        "nome": "An Unexpected Party",
-        "url": "https://ringsdb.com/bundles/cards/307005.png",
-        "esfera": "leadership"
+        "tempo_segundos": 3137,
+        "nome": "To the Sea, to the Sea!",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/11014.png"
+    },
+    {
+        "tempo_segundos": 3166,
+        "nome": "Gaeronel",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/304101.png"
     },
     {
         "tempo_segundos": 3280,
         "nome": "Song of Slumber",
-        "url": "https://ringsdb.com/bundles/cards/307006.png",
-        "esfera": "leadership"
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/307006.png"
     },
     {
         "tempo_segundos": 3294,
@@ -138,13 +180,49 @@
         "esfera": "leadership"
     },
     {
+        "tempo_segundos": 3352,
+        "nome": "Éowyn",
+        "url": "https://ringsdb.com/bundles/cards/145002.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 3410,
+        "nome": "Feint",
+        "url": "https://ringsdb.com/bundles/cards/01034.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 3479,
+        "nome": "Feigned Voices",
+        "url": "https://ringsdb.com/bundles/cards/08027.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 3544,
+        "nome": "Bartering",
+        "url": "https://ringsdb.com/bundles/cards/18015.png",
+        "esfera": "lore"
+    },
+    {
         "tempo_segundos": 3551,
         "nome": "Wild Stallion",
         "url": "https://ringsdb.com/bundles/cards/19033.png",
         "esfera": "spirit"
     },
     {
-        "tempo_segundos": 3679,
+        "tempo_segundos": 3635,
+        "nome": "Feint",
+        "url": "https://ringsdb.com/bundles/cards/01034.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 3646,
+        "nome": "Feint",
+        "url": "https://ringsdb.com/bundles/cards/01034.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 3683,
         "nome": "Song of Slumber",
         "url": "https://ringsdb.com/bundles/cards/307006.png",
         "esfera": "leadership"
@@ -156,124 +234,250 @@
         "esfera": "leadership"
     },
     {
+        "tempo_segundos": 3813,
+        "nome": "Goldberry",
+        "url": "https://ringsdb.com/bundles/cards/307003.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 3990,
+        "nome": "Tom Bombadillo!",
+        "url": "https://ringsdb.com/bundles/cards/22005.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4103,
+        "nome": "Hey Dol! Merry Dol!",
+        "url": "https://ringsdb.com/bundles/cards/307010.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4117,
+        "nome": "Hey Dol! Merry Dol!",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307010.png"
+    },
+    {
         "tempo_segundos": 4130,
         "nome": "Courage Awakened",
-        "url": "https://ringsdb.com/bundles/cards/08061.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/08061.png"
     },
     {
         "tempo_segundos": 4176,
         "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
+    },
+    {
+        "tempo_segundos": 4207,
+        "nome": "Goldberry",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307003.png"
+    },
+    {
+        "tempo_segundos": 4301,
+        "nome": "Songs of Slaying",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/307007.png"
+    },
+    {
+        "tempo_segundos": 4586,
+        "nome": "Gimli",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/16001.png"
     },
     {
         "tempo_segundos": 4636,
         "nome": "Second Breakfast",
-        "url": "https://ringsdb.com/bundles/cards/02027.png",
-        "esfera": "leadership"
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/02027.png"
+    },
+    {
+        "tempo_segundos": 4655,
+        "nome": "Strider",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/12091.png"
     },
     {
         "tempo_segundos": 4718,
         "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
         "tempo_segundos": 4765,
         "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
-        "tempo_segundos": 4770,
-        "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "tempo_segundos": 4780,
+        "nome": "Fast Hitch",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/02103.png"
     },
     {
-        "tempo_segundos": 4863,
-        "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "tempo_segundos": 4805,
+        "nome": "Elfhelm",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/146006.png"
     },
     {
-        "tempo_segundos": 4870,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "tempo_segundos": 4816,
+        "nome": "Merry",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/21003.png"
     },
     {
-        "tempo_segundos": 4917,
-        "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "tempo_segundos": 4951,
+        "nome": "Sam Gamgee",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/141002.png"
     },
     {
-        "tempo_segundos": 4954,
-        "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "tempo_segundos": 5029,
+        "nome": "Daughter of Withywindle",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307013.png"
     },
     {
         "tempo_segundos": 5072,
         "nome": "Song of Kings",
-        "url": "https://ringsdb.com/bundles/cards/02010.png",
-        "esfera": "neutral"
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/02010.png"
+    },
+    {
+        "tempo_segundos": 5072,
+        "nome": "Daughter of Withywindle",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307013.png"
+    },
+    {
+        "tempo_segundos": 5241,
+        "nome": "Lothíriel",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/22027.png"
     },
     {
         "tempo_segundos": 5251,
         "nome": "Sneak Attack",
-        "url": "https://ringsdb.com/bundles/cards/01023.png",
-        "esfera": "leadership"
-    },
-    {
-        "tempo_segundos": 5256,
-        "nome": "Sneak Attack",
-        "url": "https://ringsdb.com/bundles/cards/01023.png",
-        "esfera": "leadership"
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/01023.png"
     },
     {
         "tempo_segundos": 5262,
-        "nome": "Sneak Attack",
-        "url": "https://ringsdb.com/bundles/cards/01023.png",
-        "esfera": "leadership"
+        "nome": "Gandalf",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/142002.png"
+    },
+    {
+        "tempo_segundos": 5262,
+        "nome": "Daughter of Withywindle",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307013.png"
     },
     {
         "tempo_segundos": 5325,
         "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
     },
     {
         "tempo_segundos": 5328,
         "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
+    },
+    {
+        "tempo_segundos": 5335,
+        "nome": "Bilbo's Walking Song",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307015.png"
+    },
+    {
+        "tempo_segundos": 5340,
+        "nome": "Bilbo's Walking Song",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307015.png"
+    },
+    {
+        "tempo_segundos": 5536,
+        "nome": "Fast Hitch",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/02103.png"
+    },
+    {
+        "tempo_segundos": 5554,
+        "nome": "Northern Tracker",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01045.png"
     },
     {
         "tempo_segundos": 5659,
         "nome": "Bilbo's Walking Song",
-        "url": "https://ringsdb.com/bundles/cards/307015.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307015.png"
     },
     {
         "tempo_segundos": 5699,
         "nome": "Let Us Sing Together",
-        "url": "https://ringsdb.com/bundles/cards/307016.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307016.png"
     },
     {
-        "tempo_segundos": 5703,
-        "nome": "Let Us Sing Together",
-        "url": "https://ringsdb.com/bundles/cards/307016.png",
-        "esfera": "spirit"
+        "tempo_segundos": 5755,
+        "nome": "Tom Bombadil",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
+    },
+    {
+        "tempo_segundos": 5799,
+        "nome": "Gríma",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/07002.png"
+    },
+    {
+        "tempo_segundos": 5804,
+        "nome": "Sméagol",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/21072.png"
+    },
+    {
+        "tempo_segundos": 5805,
+        "nome": "Sméagol",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/21072.png"
+    },
+    {
+        "tempo_segundos": 5824,
+        "nome": "Grimbeorn the Old",
+        "url": "https://ringsdb.com/bundles/cards/19001.png",
+        "esfera": "tactics"
     },
     {
         "tempo_segundos": 5824,
         "nome": "Drinking Song",
         "url": "https://ringsdb.com/bundles/cards/19116.png",
         "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 5846,
+        "nome": "Saruman",
+        "url": "https://ringsdb.com/bundles/cards/309038.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 5852,
+        "nome": "Saruman's Staff",
+        "url": "https://ringsdb.com/bundles/cards/22063.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 5856,
+        "nome": "Beregond",
+        "url": "https://ringsdb.com/bundles/cards/145003.png",
+        "esfera": "spirit"
     },
     {
         "tempo_segundos": 5885,
@@ -288,10 +492,22 @@
         "esfera": "spirit"
     },
     {
+        "tempo_segundos": 5946,
+        "nome": "Lothíriel",
+        "url": "https://ringsdb.com/bundles/cards/22027.png",
+        "esfera": "spirit"
+    },
+    {
         "tempo_segundos": 6034,
         "nome": "Let Us Sing Together",
         "url": "https://ringsdb.com/bundles/cards/307016.png",
         "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 6046,
+        "nome": "Balin",
+        "url": "https://ringsdb.com/bundles/cards/304104.png",
+        "esfera": "leadership"
     },
     {
         "tempo_segundos": 6058,
@@ -300,75 +516,243 @@
         "esfera": "tactics"
     },
     {
-        "tempo_segundos": 6071,
-        "nome": "Lamenter of the Lost",
-        "url": "https://ringsdb.com/bundles/cards/307017.png",
+        "tempo_segundos": 6079,
+        "nome": "Quickbeam",
+        "url": "https://ringsdb.com/bundles/cards/17135.png",
         "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 6100,
+        "nome": "Faramir",
+        "url": "https://ringsdb.com/bundles/cards/21005.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 6182,
+        "nome": "Booming Ent",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/08141.png"
+    },
+    {
+        "tempo_segundos": 6194,
+        "nome": "Quickbeam",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/17135.png"
+    },
+    {
+        "tempo_segundos": 6211,
+        "nome": "Quickbeam",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/17135.png"
+    },
+    {
+        "tempo_segundos": 6228,
+        "nome": "Entmoot",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/143011.png"
+    },
+    {
+        "tempo_segundos": 6238,
+        "nome": "Lamenter of the Lost",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/307017.png"
+    },
+    {
+        "tempo_segundos": 6435,
+        "nome": "Fatty Lumpkin",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
+    },
+    {
+        "tempo_segundos": 6435,
+        "nome": "Fast Hitch",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/02103.png"
+    },
+    {
+        "tempo_segundos": 6435,
+        "nome": "Lamenter of the Lost",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/307017.png"
+    },
+    {
+        "tempo_segundos": 6435,
+        "nome": "Booming Ent",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/08141.png"
+    },
+    {
+        "tempo_segundos": 6455,
+        "nome": "Goldberry",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307003.png"
+    },
+    {
+        "tempo_segundos": 6544,
+        "nome": "Tom Bombadillo!",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/22005.png"
     },
     {
         "tempo_segundos": 6544,
         "nome": "Goldberry",
-        "url": "https://ringsdb.com/bundles/cards/307003.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307003.png"
+    },
+    {
+        "tempo_segundos": 6551,
+        "nome": "Tom Bombadillo!",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/22005.png"
     },
     {
         "tempo_segundos": 6620,
         "nome": "The Last Alliance",
-        "url": "https://ringsdb.com/bundles/cards/300085.png",
-        "esfera": "neutral"
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/300085.png"
     },
     {
-        "tempo_segundos": 6643,
-        "nome": "Fellowship",
-        "url": "https://ringsdb.com/bundles/cards/21074.png",
-        "esfera": "neutral"
+        "tempo_segundos": 6634,
+        "nome": "Tom Bombadil",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
     },
     {
         "tempo_segundos": 6645,
         "nome": "Elrond",
-        "url": "https://ringsdb.com/bundles/cards/142005.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/142005.png"
     },
     {
         "tempo_segundos": 6654,
         "nome": "Gondorian Spearman",
-        "url": "https://ringsdb.com/bundles/cards/01029.png",
-        "esfera": "tactics"
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/01029.png"
+    },
+    {
+        "tempo_segundos": 6654,
+        "nome": "Thalin",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/01006.png"
+    },
+    {
+        "tempo_segundos": 6833,
+        "nome": "Daughter of Withywindle",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307013.png"
     },
     {
         "tempo_segundos": 6906,
         "nome": "Fatty Lumpkin",
-        "url": "https://ringsdb.com/bundles/cards/307011.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307011.png"
+    },
+    {
+        "tempo_segundos": 6915,
+        "nome": "Songs of Slaying",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/307007.png"
     },
     {
         "tempo_segundos": 6917,
         "nome": "Round Shield",
-        "url": "https://ringsdb.com/bundles/cards/19118.png",
-        "esfera": "tactics"
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/19118.png"
     },
     {
-        "tempo_segundos": 6921,
-        "nome": "Round Shield",
-        "url": "https://ringsdb.com/bundles/cards/19118.png",
-        "esfera": "tactics"
+        "tempo_segundos": 6919,
+        "nome": "Keeping Count",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/04005.png"
     },
     {
         "tempo_segundos": 6924,
         "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
+    },
+    {
+        "tempo_segundos": 6927,
+        "nome": "Hey Dol! Merry Dol!",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307010.png"
+    },
+    {
+        "tempo_segundos": 6933,
+        "nome": "Goldberry",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307003.png"
+    },
+    {
+        "tempo_segundos": 6935,
+        "nome": "Let Us Sing Together",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307016.png"
+    },
+    {
+        "tempo_segundos": 6938,
+        "nome": "An Unexpected Party",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/307005.png"
+    },
+    {
+        "tempo_segundos": 6941,
+        "nome": "Bilbo's Walking Song",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307015.png"
+    },
+    {
+        "tempo_segundos": 6943,
+        "nome": "Lamenter of the Lost",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/307017.png"
+    },
+    {
+        "tempo_segundos": 6949,
+        "nome": "Daughter of Withywindle",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307013.png"
     },
     {
         "tempo_segundos": 6955,
         "nome": "Round Shield",
-        "url": "https://ringsdb.com/bundles/cards/19118.png",
-        "esfera": "tactics"
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/19118.png"
+    },
+    {
+        "tempo_segundos": 6955,
+        "nome": "Keeping Count",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/04005.png"
     },
     {
         "tempo_segundos": 6960,
         "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/307002.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307002.png"
+    },
+    {
+        "tempo_segundos": 6963,
+        "nome": "Hey Dol! Merry Dol!",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/307010.png"
+    },
+    {
+        "tempo_segundos": 6982,
+        "nome": "Goldberry",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307003.png"
+    },
+    {
+        "tempo_segundos": 6985,
+        "nome": "Let Us Sing Together",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307016.png"
+    },
+    {
+        "tempo_segundos": 6987,
+        "nome": "An Unexpected Party",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/307005.png"
     }
 ]
