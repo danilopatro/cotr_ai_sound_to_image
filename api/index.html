@@ -32,6 +32,18 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             text-align: center;
         }
+        
+        .player-container h2 {
+            margin-bottom: 5px;
+            color: #eebb55;
+        }
+        
+        .player-container h4 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #aaa;
+            font-weight: normal;
+        }
 
         .sidebar {
             width: 280px;
@@ -137,11 +149,10 @@
             object-fit: contain;
         }
 
-        /* --- NOVO: Estilo para Metade da Carta Dupla --- */
         .split-card {
             width: 280px;
-            height: 392px; /* Mantém a proporção padrão 5:7 perfeitamente */
-            background-size: 100% 200%; /* Estica a imagem para o dobro da altura */
+            height: 392px; 
+            background-size: 100% 200%; 
             background-repeat: no-repeat;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0,0,0,0.6);
@@ -164,7 +175,35 @@
             border-radius: 15px;
             display: inline-block;
             margin-top: 8px;
+            margin-bottom: 12px; /* Espaço pro link abaixo */
             font-family: monospace; 
+        }
+
+        /* --- NOVO: Estilos do Link do RingsDB --- */
+        .ringsdb-links {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .ringsdb-btn {
+            font-size: 0.8em;
+            color: #00b1d4; /* Azul de link agradável */
+            text-decoration: none;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .ringsdb-btn:hover {
+            background: #00b1d4;
+            color: #111;
+            border-color: #00b1d4;
+            font-weight: bold;
         }
 
         .card-item.active {
@@ -191,9 +230,12 @@
 
     <div class="layout-wrapper">
         <div class="player-container">
+            <!-- Título e Subtítulo atualizados -->
             <h2>Episódio 256</h2>
+            <h4>Seastan and Dale vs Evil</h4>
             
             <audio id="podcast-audio" controls style="width: 100%;">
+                <!-- Link do MP3 atualizado -->
                 <source src="https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_256.mp3" type="audio/mpeg">
                 Seu navegador não suporta o elemento de áudio.
             </audio>
@@ -282,39 +324,41 @@
                     cardDiv.style.setProperty('--glow-color', corPrincipal);
                     
                     let nomesHTML = grupo.cartas.map(c => c.nome).join(' & ');
+                    
+                    // 💡 NOVO: Gerador dos botões do RingsDB
+                    let linksRingsDbHTML = '';
 
-                    // Preparando a estrutura básica do card
+                    // Injeta estrutura do HTML
                     cardDiv.innerHTML = `
                         <div class="card-images-wrapper"></div>
                         <div class="card-name">${nomesHTML}</div>
                         <div class="card-time">${formatarTempo(grupo.tempo_segundos)}</div>
+                        <div class="ringsdb-links"></div>
                     `;
 
                     const imageWrapper = cardDiv.querySelector('.card-images-wrapper');
+                    const linksWrapper = cardDiv.querySelector('.ringsdb-links');
 
-                    // 💡 Lógica de Separação de Imagens
                     grupo.cartas.forEach(carta => {
                         const urlSegura = carta.url ? carta.url : '';
+                        
                         if (urlSegura) {
+                            // Imagens e Separação
                             const img = document.createElement('img');
                             img.src = urlSegura;
                             img.alt = carta.nome;
 
                             img.onload = function() {
-                                // Se a carta for quase 2x mais alta do que larga (proporção > 1.8)
                                 if (this.naturalHeight > this.naturalWidth * 1.8) {
-                                    
                                     const doubleContainer = document.createElement('div');
                                     doubleContainer.style.display = 'flex';
                                     doubleContainer.style.gap = '15px';
                                     
-                                    // Pedaço de Cima
                                     const topHalf = document.createElement('div');
                                     topHalf.className = 'split-card';
                                     topHalf.style.backgroundImage = `url('${this.src}')`;
                                     topHalf.style.backgroundPosition = 'top';
                                     
-                                    // Pedaço de Baixo
                                     const bottomHalf = document.createElement('div');
                                     bottomHalf.className = 'split-card';
                                     bottomHalf.style.backgroundImage = `url('${this.src}')`;
@@ -323,15 +367,26 @@
                                     doubleContainer.appendChild(topHalf);
                                     doubleContainer.appendChild(bottomHalf);
                                     
-                                    // Substitui a "torre" pelos dois blocos lado a lado
                                     this.replaceWith(doubleContainer);
                                 }
                             };
-                            
                             imageWrapper.appendChild(img);
+
+                            // 💡 Criando o Link com o ID da carta:
+                            // Pega a URL (ex: "https://ringsdb.com/bundles/cards/01026.png") e extrai apenas o "01026"
+                            const partesDaUrl = urlSegura.split('/');
+                            const arquivoImagem = partesDaUrl[partesDaUrl.length - 1]; // "01026.png"
+                            const idDaCarta = arquivoImagem.split('.')[0]; // "01026"
+
+                            linksWrapper.innerHTML += `
+                                <a href="https://ringsdb.com/card/${idDaCarta}" target="_blank" class="ringsdb-btn" onclick="event.stopPropagation();">
+                                    Ver <strong>${carta.nome}</strong> no RingsDB
+                                </a>
+                            `;
                         }
                     });
 
+                    // Clicar em qualquer parte vazia do card pula o áudio (mas ignorado nos links por causa do stopPropagation)
                     cardDiv.addEventListener('click', () => {
                         audioPlayer.currentTime = grupo.tempo_segundos;
                         audioPlayer.play();
