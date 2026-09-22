@@ -14,16 +14,92 @@
             padding: 40px;
             margin: 0;
         }
+
+        /* --- NOVO: Layout que divide a tela em duas colunas --- */
+        .layout-wrapper {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            max-width: 1300px; /* Aumentado para acomodar a barra lateral */
+            align-items: flex-start;
+        }
+
         .player-container {
+            flex: 1; /* Ocupa o maior espaço disponível */
+            min-width: 0; /* Previne estourar a tela */
             background: #2a2a2a;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             text-align: center;
-            width: 100%;
-            max-width: 1000px; 
+        }
+
+        /* --- NOVO: Estilos da Barra Lateral --- */
+        .sidebar {
+            width: 280px;
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            max-height: 75vh;
+            overflow-y: auto;
+            flex-shrink: 0; 
+        }
+
+        /* Scrollbar customizada para a barra lateral ficar elegante */
+        .sidebar::-webkit-scrollbar { width: 8px; }
+        .sidebar::-webkit-scrollbar-track { background: #1a1a1a; border-radius: 4px; }
+        .sidebar::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
+        .sidebar::-webkit-scrollbar-thumb:hover { background: #777; }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #eebb55;
+            text-align: center;
+            border-bottom: 1px solid #444;
+            padding-bottom: 15px;
+        }
+
+        .sidebar-item {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-left: 4px solid transparent; /* Espaço para a cor da esfera */
         }
         
+        .sidebar-item:hover {
+            background: #333;
+        }
+
+        .sidebar-item.active {
+            background: #1f1f1f;
+            border-left: 4px solid var(--glow-color); /* Pinta a lateral com a cor da carta */
+        }
+
+        .sidebar-item.active .sidebar-name {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .sidebar-time {
+            font-size: 0.85em;
+            color: #888;
+            font-family: monospace;
+            background: #111;
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .sidebar-name {
+            display: block;
+            margin-top: 6px;
+            font-size: 0.95em;
+            color: #ccc;
+        }
+        
+        /* ------------------------------------- */
+
         #status-message {
             margin: 15px 0;
             font-weight: bold;
@@ -39,9 +115,6 @@
             padding: 60px 20px; 
             width: 100%;
             align-items: center; 
-            
-            /* Retiramos o scroll-behavior: smooth daqui para não interferir na rodinha do mouse */
-            
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
@@ -49,7 +122,6 @@
             display: none;
         }
 
-        /* --- Estilo Base do Card --- */
         .card-item {
             flex: 0 0 auto; 
             opacity: 0.4; 
@@ -94,7 +166,6 @@
             font-family: monospace; 
         }
 
-        /* --- Estilo do Card ATIVO --- */
         .card-item.active {
             opacity: 1;
             transform: scale(1.12); 
@@ -108,21 +179,42 @@
             font-size: 1.2em;
             text-shadow: 0 0 8px var(--glow-color);
         }
+
+        /* Responsividade para telas menores (celulares e tablets) */
+        @media (max-width: 950px) {
+            .layout-wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                max-height: 350px;
+                box-sizing: border-box;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <div class="player-container">
-        <h2>Episódio 227</h2>
-        
-        <audio id="podcast-audio" controls style="width: 100%;">
-            <source src="https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_256.mp3" type="audio/mpeg">
-            Seu navegador não suporta o elemento de áudio.
-        </audio>
+    <div class="layout-wrapper">
+        <!-- Lado Esquerdo: Player Principal -->
+        <div class="player-container">
+            <h2>Episódio 227</h2>
+            
+            <audio id="podcast-audio" controls style="width: 100%;">
+                <source src="https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_256.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
 
-        <div id="status-message">Carregando linha do tempo...</div>
+            <div id="status-message">Carregando linha do tempo...</div>
 
-        <div id="carousel-container" class="carousel"></div>
+            <div id="carousel-container" class="carousel"></div>
+        </div>
+
+        <!-- Lado Direito: Índice Vertical -->
+        <div class="sidebar">
+            <h3>Índice de Cartas</h3>
+            <div id="sidebar-list"></div>
+        </div>
     </div>
 
     <script>
@@ -132,6 +224,7 @@
         const statusMessage = document.getElementById('status-message');
         const carousel = document.getElementById('carousel-container');
         const audioPlayer = document.getElementById('podcast-audio');
+        const sidebarList = document.getElementById('sidebar-list');
 
         function formatarTempo(segundosTotais) {
             if (isNaN(segundosTotais)) return "00:00:00";
@@ -154,10 +247,9 @@
             return cores[esfera?.toLowerCase()] || '#eebb55';
         }
 
-        // 💡 NOVO: Transforma o scroll vertical do mouse em scroll horizontal no carrossel
         carousel.addEventListener('wheel', (evt) => {
-            evt.preventDefault(); // Impede a página inteira de rolar para baixo
-            carousel.scrollLeft += evt.deltaY; // Move as cartas para os lados
+            evt.preventDefault(); 
+            carousel.scrollLeft += evt.deltaY; 
         });
 
         fetch('/api/timeline')
@@ -193,6 +285,7 @@
                 statusMessage.textContent = `${timelineAgrupada.length} momentos sincronizados. Aperte o Play!`;
                 
                 timelineAgrupada.forEach((grupo, index) => {
+                    // 1. CRIAÇÃO DOS CARDS DO CARROSSEL
                     const cardDiv = document.createElement('div');
                     cardDiv.className = 'card-item';
                     cardDiv.id = `card-${index}`;
@@ -216,13 +309,31 @@
                         <div class="card-time">${formatarTempo(grupo.tempo_segundos)}</div>
                     `;
 
-                    // Clicar na carta pula o aúdio para o tempo dela e começa a tocar
                     cardDiv.addEventListener('click', () => {
                         audioPlayer.currentTime = grupo.tempo_segundos;
                         audioPlayer.play();
                     });
 
                     carousel.appendChild(cardDiv);
+
+                    // 2. CRIAÇÃO DOS ITENS DA BARRA LATERAL (NOVO)
+                    const sidebarItem = document.createElement('div');
+                    sidebarItem.className = 'sidebar-item';
+                    sidebarItem.id = `sidebar-item-${index}`;
+                    sidebarItem.style.setProperty('--glow-color', corPrincipal);
+                    
+                    sidebarItem.innerHTML = `
+                        <span class="sidebar-time">${formatarTempo(grupo.tempo_segundos)}</span>
+                        <span class="sidebar-name">${nomesHTML}</span>
+                    `;
+
+                    // Clicar no índice lateral também pula o áudio!
+                    sidebarItem.addEventListener('click', () => {
+                        audioPlayer.currentTime = grupo.tempo_segundos;
+                        audioPlayer.play();
+                    });
+
+                    sidebarList.appendChild(sidebarItem);
                 });
 
                 audioPlayer.dispatchEvent(new Event('timeupdate'));
@@ -248,25 +359,35 @@
             }
 
             if (indexCorreto !== cartaAtualIndex) {
+                
+                // DESMARCA O ITEM ANTIGO (Carrossel e Lateral)
                 if (cartaAtualIndex !== -1) {
                     const cardAntigo = document.getElementById(`card-${cartaAtualIndex}`);
                     if (cardAntigo) cardAntigo.classList.remove('active');
+
+                    const sidebarAntigo = document.getElementById(`sidebar-item-${cartaAtualIndex}`);
+                    if (sidebarAntigo) sidebarAntigo.classList.remove('active');
                 }
 
                 cartaAtualIndex = indexCorreto;
 
+                // MARCA O ITEM NOVO (Carrossel e Lateral)
                 if (cartaAtualIndex !== -1) {
+                    
+                    // Atualiza o Carrossel
                     const cardNovo = document.getElementById(`card-${cartaAtualIndex}`);
                     if (cardNovo) {
                         cardNovo.classList.add('active');
-                        
                         const posicaoCentro = cardNovo.offsetLeft - (carousel.clientWidth / 2) + (cardNovo.clientWidth / 2);
-                        
-                        // A rolagem automática ao mudar a carta continua com animação suave
-                        carousel.scrollTo({
-                            left: posicaoCentro,
-                            behavior: 'smooth'
-                        });
+                        carousel.scrollTo({ left: posicaoCentro, behavior: 'smooth' });
+                    }
+
+                    // Atualiza a Barra Lateral
+                    const sidebarNovo = document.getElementById(`sidebar-item-${cartaAtualIndex}`);
+                    if (sidebarNovo) {
+                        sidebarNovo.classList.add('active');
+                        // Rola o índice vertical suavemente para deixar o item visível
+                        sidebarNovo.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }
                 }
             }
