@@ -50,7 +50,7 @@
         /* --- Estilo Base do Card --- */
         .card-item {
             flex: 0 0 auto; 
-            width: 300px; /* Levemente maior para acomodar combos se necessário */
+            width: 300px; 
             opacity: 0.4; 
             transform: scale(0.9);
             transition: all 0.4s ease-in-out;
@@ -60,7 +60,6 @@
             align-items: center;
         }
 
-        /* --- Container para lidar com 1 ou múltiplas cartas no mesmo segundo --- */
         .card-images-wrapper {
             display: flex;
             gap: 10px;
@@ -75,9 +74,8 @@
             object-fit: contain;
         }
 
-        /* Se houver mais de uma imagem no mesmo card, ajustamos o tamanho proporcionalmente */
         .card-images-wrapper.multi img {
-            width: 48%; /* Duas cartas dividem o espaço lado a lado */
+            width: 48%; 
         }
 
         .card-name {
@@ -148,7 +146,7 @@
 
         function pegarCorDaEsfera(esfera) {
             const cores = {
-                'leadership': '#ad62a5',
+                'leadership': '#ad62a5', 
                 'tactics': '#c00106',    
                 'spirit': '#00b1d4',     
                 'lore': '#51b848',       
@@ -161,26 +159,22 @@
 
         fetch('/api/timeline')
             .then(response => {
-                if (!response.ok) throw new Error(`Erro de rede: ${response.status}`);
+                if (!response.ok) throw new Error(`Erro: ${response.status}`);
                 return response.json();
             })
             .then(dadosRaw => {
-                console.log("Dados lidos do JSON:", dadosRaw); // Vai mostrar no F12 o que chegou
-
-                // Trava de segurança: Verifica se o Gemini mandou uma lista correta
-                if (!Array.isArray(dadosRaw)) {
-                    throw new Error("O JSON recebido não é uma lista (Array). Verifique o timeline.json.");
-                }
-
                 const mapaAgrupado = {};
                 
                 dadosRaw.forEach(carta => {
-                    // Garante que o tempo é um número válido
+                    // Garante que o tempo sempre será um número matemático para não travar
                     const tempo = parseInt(carta.tempo_segundos);
-                    if (isNaN(tempo)) return; // Pula se o tempo estiver quebrado
-                    
+                    if (isNaN(tempo)) return;
+
                     if (!mapaAgrupado[tempo]) {
-                        mapaAgrupado[tempo] = { tempo_segundos: tempo, cartas: [] };
+                        mapaAgrupado[tempo] = {
+                            tempo_segundos: tempo,
+                            cartas: []
+                        };
                     }
                     if (!mapaAgrupado[tempo].cartas.some(c => c.nome === carta.nome)) {
                         mapaAgrupado[tempo].cartas.push(carta);
@@ -188,11 +182,9 @@
                 });
 
                 timelineAgrupada = Object.values(mapaAgrupado).sort((a, b) => a.tempo_segundos - b.tempo_segundos);
-                
-                console.log("Timeline após agrupamento:", timelineAgrupada); // Mostra no F12 como ficou
 
-                if(timelineAgrupada.length === 0) {
-                    statusMessage.textContent = "Nenhuma carta encontrada no JSON.";
+                if (timelineAgrupada.length === 0) {
+                    statusMessage.textContent = "Nenhuma carta encontrada.";
                     return;
                 }
 
@@ -213,7 +205,6 @@
                     let nomesHTML = grupo.cartas.map(c => c.nome).join(' & ');
 
                     grupo.cartas.forEach(carta => {
-                        // Trava caso falte a imagem
                         const urlSegura = carta.url ? carta.url : '';
                         imagensHTML += `<img src="${urlSegura}" alt="${carta.nome}">`;
                     });
@@ -233,17 +224,24 @@
 
                     carousel.appendChild(cardDiv);
                 });
+
+                // Dispara uma atualização inicial forçada para centralizar a primeira carta assim que a página carregar
+                audioPlayer.dispatchEvent(new Event('timeupdate'));
             })
             .catch(erro => {
-                console.error("ERRO FATAL:", erro);
-                statusMessage.textContent = "Erro ao processar linha do tempo. Verifique o F12 (Console).";
+                console.error("Erro:", erro);
+                statusMessage.textContent = "Erro ao carregar a timeline.";
             });
 
+        // Relógio de sincronização reformulado
         audioPlayer.addEventListener('timeupdate', () => {
             if (timelineAgrupada.length === 0) return;
 
             const tempoAtual = audioPlayer.currentTime;
-            let indexCorreto = -1;
+            
+            // 💡 A MÁGICA ESTÁ AQUI: Começa assumindo que a carta ativa é a índice 0 (primeira).
+            // Assim, mesmo se o áudio estiver no 00:00, a primeira carta já ficará iluminada!
+            let indexCorreto = 0; 
             
             for (let i = 0; i < timelineAgrupada.length; i++) {
                 if (tempoAtual >= timelineAgrupada[i].tempo_segundos) {
@@ -266,6 +264,7 @@
                     if (cardNovo) {
                         cardNovo.classList.add('active');
                         
+                        // Faz a rolagem do carrossel focar na nova carta
                         const posicaoCentro = cardNovo.offsetLeft - (carousel.clientWidth / 2) + (cardNovo.clientWidth / 2);
                         
                         carousel.scrollTo({
