@@ -47,26 +47,47 @@
             display: none;
         }
 
-        /* --- Estilo Base da Carta --- */
+        /* --- Estilo Base do Card --- */
         .card-item {
             flex: 0 0 auto; 
-            width: 280px; 
+            width: 300px; /* Levemente maior para acomodar combos se necessário */
             opacity: 0.4; 
             transform: scale(0.9);
             transition: all 0.4s ease-in-out;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
+        /* --- Container para lidar com 1 ou múltiplas cartas no mesmo segundo --- */
+        .card-images-wrapper {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+
         .card-item img {
             width: 100%;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+            object-fit: contain;
         }
+
+        /* Se houver mais de uma imagem no mesmo card, ajustamos o tamanho proporcionalmente */
+        .card-images-wrapper.multi img {
+            width: 48%; /* Duas cartas dividem o espaço lado a lado */
+        }
+
         .card-name {
             margin-top: 15px;
             font-size: 1.1em;
             color: #ccc;
-            transition: all 0.4s ease; 
+            transition: all 0.4s ease;
+            text-align: center;
         }
+        
         .card-time {
             font-size: 0.9em;
             color: #888;
@@ -78,19 +99,19 @@
             font-family: monospace; 
         }
 
-        /* --- Estilo da Carta ATIVA --- */
+        /* --- Estilo do Card ATIVO --- */
         .card-item.active {
             opacity: 1;
-            transform: scale(1.15); 
+            transform: scale(1.12); 
             filter: drop-shadow(0 0 25px var(--glow-color)); 
             z-index: 10;
         }
         
         .card-item.active .card-name {
-            color: #ffffff; /* Fonte fixada na cor branca */
+            color: #ffffff; 
             font-weight: bold;
             font-size: 1.2em;
-            text-shadow: 0 0 8px var(--glow-color); /* Mantém um leve brilho da esfera no fundo da letra */
+            text-shadow: 0 0 8px var(--glow-color);
         }
     </style>
 </head>
@@ -110,7 +131,7 @@
     </div>
 
     <script>
-        let timelineCartas = [];
+        let timelineAgrupada = [];
         let cartaAtualIndex = -1;
         
         const statusMessage = document.getElementById('status-message');
@@ -147,25 +168,61 @@
                 if (!response.ok) throw new Error(`Erro: ${response.status}`);
                 return response.json();
             })
-            .then(dados => {
-                timelineCartas = dados;
-                statusMessage.textContent = `${timelineCartas.length} cartas sincronizadas. Aperte o Play!`;
+            .then(dadosRaw => {
+                // 💡 LÓGICA DE AGRUPAMENTO: Junta cartas que estão no mesmo segundo
+                const mapaAgrupado = {};
                 
-                timelineCartas.forEach((carta, index) => {
+                dadosRaw.forEach(carta => {
+                    const tempo = carta.tempo_segundos;
+                    if (!mapaAgrupado[tempo]) {
+                        mapaAgrupado[tempo] = {
+                            tempo_segundos: tempo,
+                            cartas: []
+                        };
+                    }
+                    // Evita duplicata exata da mesma carta no mesmo segundo
+                    if (!mapaAgrupado[tempo].cartas.some(c => c.nome === carta.nome)) {
+                        mapaAgrupado[tempo].cartas.push(carta);
+                    }
+                });
+
+                // Transforma o mapa em um array ordenado por tempo
+                timelineAgrupada = Object.values(mapaAgrupado).sort((a, b) => a.tempo_segundos - b.tempo_segundos);
+
+                statusMessage.textContent = `${timelineAgrupada.length} momentos sincronizados. Aperte o Play!`;
+                
+                // Renderiza os blocos no carrossel
+                timelineAgrupada.forEach((grupo, index) => {
                     const cardDiv = document.createElement('div');
                     cardDiv.className = 'card-item';
                     cardDiv.id = `card-${index}`;
                     
-                    cardDiv.style.setProperty('--glow-color', pegarCorDaEsfera(carta.esfera));
+                    // Pega a cor da primeira carta do grupo para o brilho
+                    const corPrincipal = pegarCorDaEsfera(grupo.cartas[0].esfera);
+                    cardDiv.style.setProperty('--glow-color', corPrincipal);
                     
+                    // Cria o HTML interno dependendo se é 1 ou mais cartas juntas
+                    const ehMultiplo = grupo.cartas.length > 1;
+                    const classeMultiplo = ehMultiplo ? 'multi' : '';
+                    
+                    let imagensHTML = '';
+                    let nomesHTML = grupo.cartas.map(c => c.nome).join(' & ');
+
+                    grupo.cartas.forEach(carta => {
+                        imagensHTML += `<img src="${carta.url}" alt="${carta.nome}">`;
+                    });
+
                     cardDiv.innerHTML = `
-                        <img src="${carta.url}" alt="${carta.nome}">
-                        <div class="card-name">${carta.nome}</div>
-                        <div class="card-time">${formatarTempo(carta.tempo_segundos)}</div>
+                        <div class="card-images-wrapper ${classeMultiplo}">
+                            ${imagensHTML}
+                        </div>
+                        <div class="card-name">${nomesHTML}</div>
+                        <div class="card-time">${formatarTempo(grupo.tempo_segundos)}</div>
                     `;
 
+                    // Ao clicar, pula para o segundo exato
                     cardDiv.addEventListener('click', () => {
-                        audioPlayer.currentTime = carta.tempo_segundos;
+                        audioPlayer.currentTime = grupo.tempo_segundos;
                         audioPlayer.play();
                     });
 
@@ -177,14 +234,15 @@
                 statusMessage.textContent = "Erro ao carregar a timeline.";
             });
 
+        // Sincronização com o áudio
         audioPlayer.addEventListener('timeupdate', () => {
-            if (timelineCartas.length === 0) return;
+            if (timelineAgrupada.length === 0) return;
 
             const tempoAtual = audioPlayer.currentTime;
             let indexCorreto = -1;
             
-            for (let i = 0; i < timelineCartas.length; i++) {
-                if (tempoAtual >= timelineCartas[i].tempo_segundos) {
+            for (let i = 0; i < timelineAgrupada.length; i++) {
+                if (tempoAtual >= timelineAgrupada[i].tempo_segundos) {
                     indexCorreto = i;
                 } else {
                     break;
@@ -194,18 +252,18 @@
             if (indexCorreto !== cartaAtualIndex) {
                 
                 if (cartaAtualIndex !== -1) {
-                    const cartaAntiga = document.getElementById(`card-${cartaAtualIndex}`);
-                    if (cartaAntiga) cartaAntiga.classList.remove('active');
+                    const cardAntigo = document.getElementById(`card-${cartaAtualIndex}`);
+                    if (cardAntigo) cardAntigo.classList.remove('active');
                 }
 
                 cartaAtualIndex = indexCorreto;
 
                 if (cartaAtualIndex !== -1) {
-                    const cartaNova = document.getElementById(`card-${cartaAtualIndex}`);
-                    if (cartaNova) {
-                        cartaNova.classList.add('active');
+                    const cardNovo = document.getElementById(`card-${cardAtualIndex}`);
+                    if (cardNovo) {
+                        cardNovo.classList.add('active');
                         
-                        const posicaoCentro = cartaNova.offsetLeft - (carousel.clientWidth / 2) + (cartaNova.clientWidth / 2);
+                        const posicaoCentro = cardNovo.offsetLeft - (carousel.clientWidth / 2) + (cardNovo.clientWidth / 2);
                         
                         carousel.scrollTo({
                             left: posicaoCentro,
