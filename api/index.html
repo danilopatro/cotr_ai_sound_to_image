@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Cardboard of the Rings - AI Player</title>
@@ -15,6 +15,7 @@
             margin: 0;
         }
 
+        /* --- Layout separating the screen into two columns --- */
         .layout-wrapper {
             display: flex;
             gap: 20px;
@@ -23,9 +24,10 @@
             align-items: flex-start;
         }
 
+        /* --- Main Player Container --- */
         .player-container {
             flex: 1; 
-            min-width: 0; 
+            min-width: 0; /* Prevents overflow */
             background: #2a2a2a;
             padding: 30px;
             border-radius: 10px;
@@ -45,6 +47,7 @@
             font-weight: normal;
         }
 
+        /* --- Sidebar Styles --- */
         .sidebar {
             width: 280px;
             background: #2a2a2a;
@@ -56,6 +59,7 @@
             flex-shrink: 0; 
         }
 
+        /* Custom scrollbar for an elegant sidebar */
         .sidebar::-webkit-scrollbar { width: 8px; }
         .sidebar::-webkit-scrollbar-track { background: #1a1a1a; border-radius: 4px; }
         .sidebar::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
@@ -81,7 +85,7 @@
 
         .sidebar-item.active {
             background: #1f1f1f;
-            border-left: 4px solid var(--glow-color); 
+            border-left: 4px solid var(--glow-color); /* Edge painted with the sphere's color */
         }
 
         .sidebar-item.active .sidebar-name {
@@ -112,6 +116,7 @@
             font-size: 1.2em;
         }
 
+        /* --- Carousel Styles --- */
         .carousel {
             position: relative; 
             display: flex;
@@ -125,6 +130,7 @@
         }
         .carousel::-webkit-scrollbar { display: none; }
 
+        /* --- Base Card Style --- */
         .card-item {
             flex: 0 0 auto; 
             opacity: 0.4; 
@@ -149,6 +155,7 @@
             object-fit: contain;
         }
 
+        /* --- Style for Double/Split Cards (like Quests) --- */
         .split-card {
             width: 280px;
             height: 392px; 
@@ -179,7 +186,7 @@
             font-family: monospace; 
         }
 
-        /* --- Estilos Atualizados do Link do RingsDB --- */
+        /* --- RingsDB Link Styles --- */
         .ringsdb-links {
             display: flex;
             flex-direction: column;
@@ -189,7 +196,7 @@
 
         .ringsdb-btn {
             font-size: 0.8em;
-            color: #ffffff; /* Fonte sempre branca */
+            color: #ffffff; 
             text-decoration: none;
             border: none;
             padding: 6px 14px;
@@ -197,14 +204,15 @@
             transition: all 0.2s ease;
             display: inline-block;
             box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra no texto para garantir leitura em cores claras */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
         }
 
         .ringsdb-btn:hover {
-            filter: brightness(1.2); /* Apenas clareia a cor original no hover */
+            filter: brightness(1.2); 
             transform: scale(1.05);
         }
 
+        /* --- ACTIVE Card Style --- */
         .card-item.active {
             opacity: 1;
             transform: scale(1.12); 
@@ -219,6 +227,7 @@
             text-shadow: 0 0 8px var(--glow-color);
         }
 
+        /* Responsiveness for smaller screens */
         @media (max-width: 950px) {
             .layout-wrapper { flex-direction: column; }
             .sidebar { width: 100%; max-height: 350px; box-sizing: border-box; }
@@ -228,44 +237,46 @@
 <body>
 
     <div class="layout-wrapper">
+        <!-- Left Side: Main Player -->
         <div class="player-container">
-            <h2>Episódio 256</h2>
+            <h2>Episode 256</h2>
             <h4>Seastan and Dale vs Evil</h4>
             
             <audio id="podcast-audio" controls style="width: 100%;">
                 <source src="https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_256.mp3" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
+                Your browser does not support the audio element.
             </audio>
 
-            <div id="status-message">Carregando linha do tempo...</div>
+            <div id="status-message">Loading timeline...</div>
             <div id="carousel-container" class="carousel"></div>
         </div>
 
+        <!-- Right Side: Vertical Index -->
         <div class="sidebar">
-            <h3>Índice de Cartas</h3>
+            <h3>Card Index</h3>
             <div id="sidebar-list"></div>
         </div>
     </div>
 
     <script>
-        let timelineAgrupada = [];
-        let cartaAtualIndex = -1;
+        let groupedTimeline = [];
+        let currentCardIndex = -1;
         
         const statusMessage = document.getElementById('status-message');
         const carousel = document.getElementById('carousel-container');
         const audioPlayer = document.getElementById('podcast-audio');
         const sidebarList = document.getElementById('sidebar-list');
 
-        function formatarTempo(segundosTotais) {
-            if (isNaN(segundosTotais)) return "00:00:00";
-            const horas = Math.floor(segundosTotais / 3600);
-            const minutos = Math.floor((segundosTotais % 3600) / 60);
-            const segundos = Math.floor(segundosTotais % 60);
-            return `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+        function formatTime(totalSeconds) {
+            if (isNaN(totalSeconds)) return "00:00:00";
+            const hours = Math.floor(totalSeconds / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = Math.floor(totalSeconds % 60);
+            return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }
 
-        function pegarCorDaEsfera(esfera) {
-            const cores = {
+        function getSphereColor(sphere) {
+            const colors = {
                 'leadership': '#ad62a5', 
                 'tactics': '#c00106',    
                 'spirit': '#00b1d4',     
@@ -274,9 +285,10 @@
                 'fellowship': '#b56c0c', 
                 'baggins': '#b39e26'     
             };
-            return cores[esfera?.toLowerCase()] || '#eebb55';
+            return colors[sphere?.toLowerCase()] || '#eebb55';
         }
 
+        // Transforms vertical mouse wheel scroll into horizontal carousel scroll
         carousel.addEventListener('wheel', (evt) => {
             evt.preventDefault(); 
             carousel.scrollLeft += evt.deltaY; 
@@ -284,65 +296,69 @@
 
         fetch('/api/timeline')
             .then(response => {
-                if (!response.ok) throw new Error(`Erro: ${response.status}`);
+                if (!response.ok) throw new Error(`Error: ${response.status}`);
                 return response.json();
             })
-            .then(dadosRaw => {
-                const mapaAgrupado = {};
+            .then(rawData => {
+                const groupedMap = {};
                 
-                dadosRaw.forEach(carta => {
-                    const tempo = parseInt(carta.tempo_segundos);
-                    if (isNaN(tempo)) return;
+                // Keep mapping the original JSON keys (tempo_segundos, nome, esfera) 
+                // to maintain compatibility with the Python backend output.
+                rawData.forEach(card => {
+                    const time = parseInt(card.tempo_segundos);
+                    if (isNaN(time)) return;
 
-                    if (!mapaAgrupado[tempo]) {
-                        mapaAgrupado[tempo] = { tempo_segundos: tempo, cartas: [] };
+                    if (!groupedMap[time]) {
+                        groupedMap[time] = { time_seconds: time, cards: [] };
                     }
-                    if (!mapaAgrupado[tempo].cartas.some(c => c.nome === carta.nome)) {
-                        mapaAgrupado[tempo].cartas.push(carta);
+                    // Prevent exact duplicates in the same second
+                    if (!groupedMap[time].cards.some(c => c.nome === card.nome)) {
+                        groupedMap[time].cards.push(card);
                     }
                 });
 
-                timelineAgrupada = Object.values(mapaAgrupado).sort((a, b) => a.tempo_segundos - b.tempo_segundos);
+                // Sort timeline chronologically
+                groupedTimeline = Object.values(groupedMap).sort((a, b) => a.time_seconds - b.time_seconds);
 
-                if (timelineAgrupada.length === 0) {
-                    statusMessage.textContent = "Nenhuma carta encontrada.";
+                if (groupedTimeline.length === 0) {
+                    statusMessage.textContent = "No cards found.";
                     return;
                 }
 
-                statusMessage.textContent = `${timelineAgrupada.length} momentos sincronizados. Aperte o Play!`;
+                statusMessage.textContent = `${groupedTimeline.length} moments synced. Press Play!`;
                 
-                timelineAgrupada.forEach((grupo, index) => {
+                groupedTimeline.forEach((group, index) => {
                     
+                    // 1. CAROUSEL CARDS CREATION
                     const cardDiv = document.createElement('div');
                     cardDiv.className = 'card-item';
                     cardDiv.id = `card-${index}`;
                     
-                    const corPrincipal = pegarCorDaEsfera(grupo.cartas[0].esfera);
-                    cardDiv.style.setProperty('--glow-color', corPrincipal);
+                    const mainColor = getSphereColor(group.cards[0].esfera);
+                    cardDiv.style.setProperty('--glow-color', mainColor);
                     
-                    let nomesHTML = grupo.cartas.map(c => c.nome).join(' & ');
+                    let namesHTML = group.cards.map(c => c.nome).join(' & ');
                     
-                    let linksRingsDbHTML = '';
-
                     cardDiv.innerHTML = `
                         <div class="card-images-wrapper"></div>
-                        <div class="card-name">${nomesHTML}</div>
-                        <div class="card-time">${formatarTempo(grupo.tempo_segundos)}</div>
+                        <div class="card-name">${namesHTML}</div>
+                        <div class="card-time">${formatTime(group.time_seconds)}</div>
                         <div class="ringsdb-links"></div>
                     `;
 
                     const imageWrapper = cardDiv.querySelector('.card-images-wrapper');
                     const linksWrapper = cardDiv.querySelector('.ringsdb-links');
 
-                    grupo.cartas.forEach(carta => {
-                        const urlSegura = carta.url ? carta.url : '';
-                        const corDaCarta = pegarCorDaEsfera(carta.esfera);
+                    group.cards.forEach(card => {
+                        const safeUrl = card.url ? card.url : '';
+                        const cardColor = getSphereColor(card.esfera);
                         
-                        if (urlSegura) {
+                        if (safeUrl) {
                             const img = document.createElement('img');
-                            img.src = urlSegura;
-                            img.alt = carta.nome;
+                            img.src = safeUrl;
+                            img.alt = card.nome;
 
+                            // Splits unusually tall images (e.g. Quests) into two side-by-side halves
                             img.onload = function() {
                                 if (this.naturalHeight > this.naturalWidth * 1.8) {
                                     const doubleContainer = document.createElement('div');
@@ -367,88 +383,94 @@
                             };
                             imageWrapper.appendChild(img);
 
-                            const partesDaUrl = urlSegura.split('/');
-                            const arquivoImagem = partesDaUrl[partesDaUrl.length - 1]; 
-                            const idDaCarta = arquivoImagem.split('.')[0]; 
+                            // RingsDB Link Generation
+                            const urlParts = safeUrl.split('/');
+                            const imageFile = urlParts[urlParts.length - 1]; 
+                            const cardId = imageFile.split('.')[0]; 
 
-                            // 💡 O link agora aplica a cor da esfera diretamente no background-color
                             linksWrapper.innerHTML += `
-                                <a href="https://ringsdb.com/card/${idDaCarta}" target="_blank" class="ringsdb-btn" style="background-color: ${corDaCarta};" onclick="event.stopPropagation();">
-                                    Ver <strong>${carta.nome}</strong> no RingsDB
+                                <a href="https://ringsdb.com/card/${cardId}" target="_blank" class="ringsdb-btn" style="background-color: ${cardColor};" onclick="event.stopPropagation();">
+                                    View <strong>${card.nome}</strong> on RingsDB
                                 </a>
                             `;
                         }
                     });
 
+                    // Clicking the card area jumps the audio
                     cardDiv.addEventListener('click', () => {
-                        audioPlayer.currentTime = grupo.tempo_segundos;
+                        audioPlayer.currentTime = group.time_seconds;
                         audioPlayer.play();
                     });
 
                     carousel.appendChild(cardDiv);
 
+                    // 2. SIDEBAR ITEMS CREATION
                     const sidebarItem = document.createElement('div');
                     sidebarItem.className = 'sidebar-item';
                     sidebarItem.id = `sidebar-item-${index}`;
-                    sidebarItem.style.setProperty('--glow-color', corPrincipal);
+                    sidebarItem.style.setProperty('--glow-color', mainColor);
                     
                     sidebarItem.innerHTML = `
-                        <span class="sidebar-time">${formatarTempo(grupo.tempo_segundos)}</span>
-                        <span class="sidebar-name">${nomesHTML}</span>
+                        <span class="sidebar-time">${formatTime(group.time_seconds)}</span>
+                        <span class="sidebar-name">${namesHTML}</span>
                     `;
 
                     sidebarItem.addEventListener('click', () => {
-                        audioPlayer.currentTime = grupo.tempo_segundos;
+                        audioPlayer.currentTime = group.time_seconds;
                         audioPlayer.play();
                     });
 
                     sidebarList.appendChild(sidebarItem);
                 });
 
+                // Trigger initial sync to highlight the first card
                 audioPlayer.dispatchEvent(new Event('timeupdate'));
             })
-            .catch(erro => {
-                console.error("Erro:", erro);
-                statusMessage.textContent = "Erro ao carregar a timeline.";
+            .catch(error => {
+                console.error("Error:", error);
+                statusMessage.textContent = "Error loading the timeline.";
             });
 
+        // Syncs the carousel and sidebar with the audio playback
         audioPlayer.addEventListener('timeupdate', () => {
-            if (timelineAgrupada.length === 0) return;
+            if (groupedTimeline.length === 0) return;
 
-            const tempoAtual = audioPlayer.currentTime;
-            let indexCorreto = 0; 
+            const currentTime = audioPlayer.currentTime;
+            let correctIndex = 0; 
             
-            for (let i = 0; i < timelineAgrupada.length; i++) {
-                if (tempoAtual >= timelineAgrupada[i].tempo_segundos) {
-                    indexCorreto = i;
+            for (let i = 0; i < groupedTimeline.length; i++) {
+                if (currentTime >= groupedTimeline[i].time_seconds) {
+                    correctIndex = i;
                 } else {
                     break;
                 }
             }
 
-            if (indexCorreto !== cartaAtualIndex) {
-                if (cartaAtualIndex !== -1) {
-                    const cardAntigo = document.getElementById(`card-${cartaAtualIndex}`);
-                    if (cardAntigo) cardAntigo.classList.remove('active');
+            if (correctIndex !== currentCardIndex) {
+                // UNMARK PREVIOUS ITEM
+                if (currentCardIndex !== -1) {
+                    const oldCard = document.getElementById(`card-${currentCardIndex}`);
+                    if (oldCard) oldCard.classList.remove('active');
 
-                    const sidebarAntigo = document.getElementById(`sidebar-item-${cartaAtualIndex}`);
-                    if (sidebarAntigo) sidebarAntigo.classList.remove('active');
+                    const oldSidebar = document.getElementById(`sidebar-item-${currentCardIndex}`);
+                    if (oldSidebar) oldSidebar.classList.remove('active');
                 }
 
-                cartaAtualIndex = indexCorreto;
+                currentCardIndex = correctIndex;
 
-                if (cartaAtualIndex !== -1) {
-                    const cardNovo = document.getElementById(`card-${cartaAtualIndex}`);
-                    if (cardNovo) {
-                        cardNovo.classList.add('active');
-                        const posicaoCentro = cardNovo.offsetLeft - (carousel.clientWidth / 2) + (cardNovo.clientWidth / 2);
-                        carousel.scrollTo({ left: posicaoCentro, behavior: 'smooth' });
+                // MARK NEW ITEM
+                if (currentCardIndex !== -1) {
+                    const newCard = document.getElementById(`card-${currentCardIndex}`);
+                    if (newCard) {
+                        newCard.classList.add('active');
+                        const centerPosition = newCard.offsetLeft - (carousel.clientWidth / 2) + (newCard.clientWidth / 2);
+                        carousel.scrollTo({ left: centerPosition, behavior: 'smooth' });
                     }
 
-                    const sidebarNovo = document.getElementById(`sidebar-item-${cartaAtualIndex}`);
-                    if (sidebarNovo) {
-                        sidebarNovo.classList.add('active');
-                        sidebarNovo.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    const newSidebar = document.getElementById(`sidebar-item-${currentCardIndex}`);
+                    if (newSidebar) {
+                        newSidebar.classList.add('active');
+                        newSidebar.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }
                 }
             }
