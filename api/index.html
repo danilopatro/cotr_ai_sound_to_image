@@ -37,9 +37,10 @@
             overflow-x: auto;
             gap: 30px; 
             padding: 60px 20px; 
-            scroll-behavior: smooth;
             width: 100%;
-            align-items: center; /* Alinha os itens pelo centro verticalmente */
+            align-items: center; 
+            
+            /* Retiramos o scroll-behavior: smooth daqui para não interferir na rodinha do mouse */
             
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -51,7 +52,6 @@
         /* --- Estilo Base do Card --- */
         .card-item {
             flex: 0 0 auto; 
-            /* Removemos o limitador de largura (width) daqui para a caixa poder expandir */
             opacity: 0.4; 
             transform: scale(0.9);
             transition: all 0.4s ease-in-out;
@@ -63,11 +63,10 @@
 
         .card-images-wrapper {
             display: flex;
-            gap: 15px; /* Espaço entre as cartas quando tem mais de uma */
+            gap: 15px; 
             justify-content: center;
         }
 
-        /* O tamanho fixo de leitura da carta fica diretamente na imagem */
         .card-item img {
             width: 280px; 
             border-radius: 12px;
@@ -155,6 +154,12 @@
             return cores[esfera?.toLowerCase()] || '#eebb55';
         }
 
+        // 💡 NOVO: Transforma o scroll vertical do mouse em scroll horizontal no carrossel
+        carousel.addEventListener('wheel', (evt) => {
+            evt.preventDefault(); // Impede a página inteira de rolar para baixo
+            carousel.scrollLeft += evt.deltaY; // Move as cartas para os lados
+        });
+
         fetch('/api/timeline')
             .then(response => {
                 if (!response.ok) throw new Error(`Erro: ${response.status}`);
@@ -211,6 +216,7 @@
                         <div class="card-time">${formatarTempo(grupo.tempo_segundos)}</div>
                     `;
 
+                    // Clicar na carta pula o aúdio para o tempo dela e começa a tocar
                     cardDiv.addEventListener('click', () => {
                         audioPlayer.currentTime = grupo.tempo_segundos;
                         audioPlayer.play();
@@ -256,6 +262,7 @@
                         
                         const posicaoCentro = cardNovo.offsetLeft - (carousel.clientWidth / 2) + (cardNovo.clientWidth / 2);
                         
+                        // A rolagem automática ao mudar a carta continua com animação suave
                         carousel.scrollTo({
                             left: posicaoCentro,
                             behavior: 'smooth'
