@@ -139,69 +139,73 @@
         const audioPlayer = document.getElementById('podcast-audio');
 
         function formatarTempo(segundosTotais) {
+            if (isNaN(segundosTotais)) return "00:00:00";
             const horas = Math.floor(segundosTotais / 3600);
             const minutos = Math.floor((segundosTotais % 3600) / 60);
             const segundos = Math.floor(segundosTotais % 60);
-            
-            const hh = horas.toString().padStart(2, '0');
-            const mm = minutos.toString().padStart(2, '0');
-            const ss = segundos.toString().padStart(2, '0');
-            
-            return `${hh}:${mm}:${ss}`;
+            return `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
         }
 
         function pegarCorDaEsfera(esfera) {
             const cores = {
-                'leadership': '#ad62a5', // Roxo
-                'tactics': '#c00106',    // Vermelho 
-                'spirit': '#00b1d4',     // Azul
-                'lore': '#51b848',       // Verde
-                'neutral': '#616161',    // Cinza
-                'fellowship': '#b56c0c', // Dourado
-                'baggins': '#b39e26'     // Dourado
+                'leadership': '#ad62a5',
+                'tactics': '#c00106',    
+                'spirit': '#00b1d4',     
+                'lore': '#51b848',       
+                'neutral': '#616161',    
+                'fellowship': '#b56c0c', 
+                'baggins': '#b39e26'     
             };
             return cores[esfera?.toLowerCase()] || '#eebb55';
         }
 
         fetch('/api/timeline')
             .then(response => {
-                if (!response.ok) throw new Error(`Erro: ${response.status}`);
+                if (!response.ok) throw new Error(`Erro de rede: ${response.status}`);
                 return response.json();
             })
             .then(dadosRaw => {
-                // 💡 LÓGICA DE AGRUPAMENTO: Junta cartas que estão no mesmo segundo
+                console.log("Dados lidos do JSON:", dadosRaw); // Vai mostrar no F12 o que chegou
+
+                // Trava de segurança: Verifica se o Gemini mandou uma lista correta
+                if (!Array.isArray(dadosRaw)) {
+                    throw new Error("O JSON recebido não é uma lista (Array). Verifique o timeline.json.");
+                }
+
                 const mapaAgrupado = {};
                 
                 dadosRaw.forEach(carta => {
-                    const tempo = carta.tempo_segundos;
+                    // Garante que o tempo é um número válido
+                    const tempo = parseInt(carta.tempo_segundos);
+                    if (isNaN(tempo)) return; // Pula se o tempo estiver quebrado
+                    
                     if (!mapaAgrupado[tempo]) {
-                        mapaAgrupado[tempo] = {
-                            tempo_segundos: tempo,
-                            cartas: []
-                        };
+                        mapaAgrupado[tempo] = { tempo_segundos: tempo, cartas: [] };
                     }
-                    // Evita duplicata exata da mesma carta no mesmo segundo
                     if (!mapaAgrupado[tempo].cartas.some(c => c.nome === carta.nome)) {
                         mapaAgrupado[tempo].cartas.push(carta);
                     }
                 });
 
-                // Transforma o mapa em um array ordenado por tempo
                 timelineAgrupada = Object.values(mapaAgrupado).sort((a, b) => a.tempo_segundos - b.tempo_segundos);
+                
+                console.log("Timeline após agrupamento:", timelineAgrupada); // Mostra no F12 como ficou
+
+                if(timelineAgrupada.length === 0) {
+                    statusMessage.textContent = "Nenhuma carta encontrada no JSON.";
+                    return;
+                }
 
                 statusMessage.textContent = `${timelineAgrupada.length} momentos sincronizados. Aperte o Play!`;
                 
-                // Renderiza os blocos no carrossel
                 timelineAgrupada.forEach((grupo, index) => {
                     const cardDiv = document.createElement('div');
                     cardDiv.className = 'card-item';
                     cardDiv.id = `card-${index}`;
                     
-                    // Pega a cor da primeira carta do grupo para o brilho
                     const corPrincipal = pegarCorDaEsfera(grupo.cartas[0].esfera);
                     cardDiv.style.setProperty('--glow-color', corPrincipal);
                     
-                    // Cria o HTML interno dependendo se é 1 ou mais cartas juntas
                     const ehMultiplo = grupo.cartas.length > 1;
                     const classeMultiplo = ehMultiplo ? 'multi' : '';
                     
@@ -209,7 +213,9 @@
                     let nomesHTML = grupo.cartas.map(c => c.nome).join(' & ');
 
                     grupo.cartas.forEach(carta => {
-                        imagensHTML += `<img src="${carta.url}" alt="${carta.nome}">`;
+                        // Trava caso falte a imagem
+                        const urlSegura = carta.url ? carta.url : '';
+                        imagensHTML += `<img src="${urlSegura}" alt="${carta.nome}">`;
                     });
 
                     cardDiv.innerHTML = `
@@ -220,7 +226,6 @@
                         <div class="card-time">${formatarTempo(grupo.tempo_segundos)}</div>
                     `;
 
-                    // Ao clicar, pula para o segundo exato
                     cardDiv.addEventListener('click', () => {
                         audioPlayer.currentTime = grupo.tempo_segundos;
                         audioPlayer.play();
@@ -230,11 +235,10 @@
                 });
             })
             .catch(erro => {
-                console.error("Erro:", erro);
-                statusMessage.textContent = "Erro ao carregar a timeline.";
+                console.error("ERRO FATAL:", erro);
+                statusMessage.textContent = "Erro ao processar linha do tempo. Verifique o F12 (Console).";
             });
 
-        // Sincronização com o áudio
         audioPlayer.addEventListener('timeupdate', () => {
             if (timelineAgrupada.length === 0) return;
 
@@ -250,7 +254,6 @@
             }
 
             if (indexCorreto !== cartaAtualIndex) {
-                
                 if (cartaAtualIndex !== -1) {
                     const cardAntigo = document.getElementById(`card-${cartaAtualIndex}`);
                     if (cardAntigo) cardAntigo.classList.remove('active');
@@ -259,7 +262,7 @@
                 cartaAtualIndex = indexCorreto;
 
                 if (cartaAtualIndex !== -1) {
-                    const cardNovo = document.getElementById(`card-${cardAtualIndex}`);
+                    const cardNovo = document.getElementById(`card-${cartaAtualIndex}`);
                     if (cardNovo) {
                         cardNovo.classList.add('active');
                         
