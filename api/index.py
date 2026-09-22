@@ -6,23 +6,23 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# 1. Quando alguém acessar a página principal (/), o Python entrega o seu index.html
+# 1. When someone accesses the main page (/), Python serves the index.html
 @app.route('/')
 def home():
-    caminho_pasta = os.path.dirname(__file__)
-    return send_from_directory(caminho_pasta, 'index.html')
+    folder_path = os.path.dirname(__file__)
+    return send_from_directory(folder_path, 'index.html')
 
-# 2. Quando o site pedir as cartas, o Python entrega o JSON
+# 2. When the site requests the cards, Python delivers the JSON
 @app.route('/api/timeline', methods=['GET'])
 def get_timeline():
     try:
-        caminho_pasta = os.path.dirname(__file__)
-        caminho_arquivo = os.path.join(caminho_pasta, 'timeline.json')
+        folder_path = os.path.dirname(__file__)
+        file_path = os.path.join(folder_path, 'timeline.json')
         
-        with open(caminho_arquivo, 'r', encoding='utf-8') as arquivo:
-            dados_reais = json.load(arquivo)
+        with open(file_path, 'r', encoding='utf-8') as file:
+            timeline_data = json.load(file)
             
-        return jsonify(dados_reais)
+        return jsonify(timeline_data)
         
     except FileNotFoundError:
-        return jsonify({"erro": "Arquivo timeline.json não encontrado na pasta api."}), 404
+        return jsonify({"error": "File timeline.json not found in the api folder."}), 404
