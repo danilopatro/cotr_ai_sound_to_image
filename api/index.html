@@ -39,6 +39,7 @@
             padding: 60px 20px; 
             scroll-behavior: smooth;
             width: 100%;
+            align-items: center; /* Alinha os itens pelo centro verticalmente */
             
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -50,7 +51,7 @@
         /* --- Estilo Base do Card --- */
         .card-item {
             flex: 0 0 auto; 
-            width: 300px; 
+            /* Removemos o limitador de largura (width) daqui para a caixa poder expandir */
             opacity: 0.4; 
             transform: scale(0.9);
             transition: all 0.4s ease-in-out;
@@ -62,20 +63,16 @@
 
         .card-images-wrapper {
             display: flex;
-            gap: 10px;
-            width: 100%;
+            gap: 15px; /* Espaço entre as cartas quando tem mais de uma */
             justify-content: center;
         }
 
+        /* O tamanho fixo de leitura da carta fica diretamente na imagem */
         .card-item img {
-            width: 100%;
+            width: 280px; 
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0,0,0,0.6);
             object-fit: contain;
-        }
-
-        .card-images-wrapper.multi img {
-            width: 48%; 
         }
 
         .card-name {
@@ -84,6 +81,7 @@
             color: #ccc;
             transition: all 0.4s ease;
             text-align: center;
+            max-width: 90%;
         }
         
         .card-time {
@@ -166,7 +164,6 @@
                 const mapaAgrupado = {};
                 
                 dadosRaw.forEach(carta => {
-                    // Garante que o tempo sempre será um número matemático para não travar
                     const tempo = parseInt(carta.tempo_segundos);
                     if (isNaN(tempo)) return;
 
@@ -198,9 +195,6 @@
                     const corPrincipal = pegarCorDaEsfera(grupo.cartas[0].esfera);
                     cardDiv.style.setProperty('--glow-color', corPrincipal);
                     
-                    const ehMultiplo = grupo.cartas.length > 1;
-                    const classeMultiplo = ehMultiplo ? 'multi' : '';
-                    
                     let imagensHTML = '';
                     let nomesHTML = grupo.cartas.map(c => c.nome).join(' & ');
 
@@ -210,7 +204,7 @@
                     });
 
                     cardDiv.innerHTML = `
-                        <div class="card-images-wrapper ${classeMultiplo}">
+                        <div class="card-images-wrapper">
                             ${imagensHTML}
                         </div>
                         <div class="card-name">${nomesHTML}</div>
@@ -225,7 +219,6 @@
                     carousel.appendChild(cardDiv);
                 });
 
-                // Dispara uma atualização inicial forçada para centralizar a primeira carta assim que a página carregar
                 audioPlayer.dispatchEvent(new Event('timeupdate'));
             })
             .catch(erro => {
@@ -233,14 +226,11 @@
                 statusMessage.textContent = "Erro ao carregar a timeline.";
             });
 
-        // Relógio de sincronização reformulado
         audioPlayer.addEventListener('timeupdate', () => {
             if (timelineAgrupada.length === 0) return;
 
             const tempoAtual = audioPlayer.currentTime;
             
-            // 💡 A MÁGICA ESTÁ AQUI: Começa assumindo que a carta ativa é a índice 0 (primeira).
-            // Assim, mesmo se o áudio estiver no 00:00, a primeira carta já ficará iluminada!
             let indexCorreto = 0; 
             
             for (let i = 0; i < timelineAgrupada.length; i++) {
@@ -264,7 +254,6 @@
                     if (cardNovo) {
                         cardNovo.classList.add('active');
                         
-                        // Faz a rolagem do carrossel focar na nova carta
                         const posicaoCentro = cardNovo.offsetLeft - (carousel.clientWidth / 2) + (cardNovo.clientWidth / 2);
                         
                         carousel.scrollTo({
