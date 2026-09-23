@@ -12,8 +12,9 @@
             align-items: center;
             background-color: #1a1a1a;
             color: #f1f1f1;
-            padding: 40px;
+            padding: 40px 40px 10px 40px; /* Reduzi o padding de baixo para o rodapé encaixar melhor */
             margin: 0;
+            min-height: 100vh; /* Garante que o fundo cubra a tela toda */
         }
 
         /* --- Layout separating the screen into two columns --- */
@@ -23,6 +24,7 @@
             width: 100%;
             max-width: 1300px; 
             align-items: flex-start;
+            flex: 1; /* Faz o conteúdo principal empurrar o rodapé para baixo */
         }
 
         /* --- Main Player Container --- */
@@ -228,6 +230,19 @@
             text-shadow: 0 0 8px var(--glow-color);
         }
 
+        /* --- Footer / Disclaimer Styles --- */
+        .site-footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            width: 100%;
+            max-width: 1300px;
+            text-align: center;
+            font-size: 0.75em;
+            color: #666; /* Cinza discreto */
+            border-top: 1px solid #333;
+            line-height: 1.5;
+        }
+
         /* Responsiveness for smaller screens */
         @media (max-width: 950px) {
             .layout-wrapper { flex-direction: column; }
@@ -258,6 +273,11 @@
             <div id="sidebar-list"></div>
         </div>
     </div>
+
+    <!-- 💡 NOVO: Footer / Disclaimer -->
+    <footer class="site-footer">
+        Disclaimer: This is an unofficial fan-made website and is not affiliated with, endorsed, or sponsored by Fantasy Flight Games, Middle-earth Enterprises, or The Tolkien Estate. The Lord of the Rings: The Card Game and all associated art and text are copyright Fantasy Flight Games. Card data is sourced from RingsDB.com, and media information belongs to the Cardboard of the Rings podcast. No intellectual property rights are claimed by this project.
+    </footer>
 
     <script>
         let groupedTimeline = [];
