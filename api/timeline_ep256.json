@@ -42,7 +42,7 @@
         "esfera": "neutral"
     },
     {
-        "tempo_segundos": 1940,
+        "tempo_segundos": 1943,
         "nome": "Saruman",
         "url": "https://ringsdb.com/bundles/cards/309038.png",
         "esfera": "neutral"
@@ -50,386 +50,170 @@
     {
         "tempo_segundos": 2411,
         "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/12030.png"
     },
     {
         "tempo_segundos": 2441,
         "nome": "King of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2485,
-        "nome": "King of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/18008.png"
     },
     {
         "tempo_segundos": 2506,
         "nome": "A Perilous Voyage",
-        "url": "https://ringsdb.com/bundles/cards/40047.png",
-        "esfera": "neutral"
-    },
-    {
-        "tempo_segundos": 2516,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2525,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2541,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2557,
-        "nome": "King of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png",
-        "esfera": "spirit"
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/40047.png"
     },
     {
         "tempo_segundos": 2643,
         "nome": "Bard son of Brand",
-        "url": "https://ringsdb.com/bundles/cards/18002.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2668,
-        "nome": "King of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/18002.png"
     },
     {
         "tempo_segundos": 2712,
         "nome": "North Realm Lookout",
-        "url": "https://ringsdb.com/bundles/cards/18004.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/18004.png"
     },
     {
         "tempo_segundos": 2731,
         "nome": "Spare Hood and Cloak",
-        "url": "https://ringsdb.com/bundles/cards/131012.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2755,
-        "nome": "North Realm Lookout",
-        "url": "https://ringsdb.com/bundles/cards/18004.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2811,
-        "nome": "Mr. Underhill",
-        "url": "https://ringsdb.com/bundles/cards/141017.png",
-        "esfera": "neutral"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/131012.png"
     },
     {
         "tempo_segundos": 2838,
         "nome": "Bartering",
-        "url": "https://ringsdb.com/bundles/cards/18015.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/18015.png"
     },
     {
         "tempo_segundos": 2838,
         "nome": "Long Lake Trader",
-        "url": "https://ringsdb.com/bundles/cards/18006.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/18006.png"
     },
     {
         "tempo_segundos": 2858,
         "nome": "Brand son of Bain",
-        "url": "https://ringsdb.com/bundles/cards/502993.png",
-        "esfera": "tactics"
-    },
-    {
-        "tempo_segundos": 2869,
-        "nome": "Guardian of Esgaroth",
-        "url": "https://ringsdb.com/bundles/cards/19002.png",
-        "esfera": "leadership"
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/502993.png"
     },
     {
         "tempo_segundos": 2869,
         "nome": "Great Yew Bow",
-        "url": "https://ringsdb.com/bundles/cards/132014.png",
-        "esfera": "tactics"
-    },
-    {
-        "tempo_segundos": 2869,
-        "nome": "Map of Rhovanion",
-        "url": "https://ringsdb.com/bundles/cards/18010.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2869,
-        "nome": "North Realm Lookout",
-        "url": "https://ringsdb.com/bundles/cards/18004.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2887,
-        "nome": "Spare Hood and Cloak",
-        "url": "https://ringsdb.com/bundles/cards/131012.png",
-        "esfera": "spirit"
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/132014.png"
     },
     {
         "tempo_segundos": 2887,
         "nome": "Faramir",
-        "url": "https://ringsdb.com/bundles/cards/21005.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2929,
-        "nome": "Spare Hood and Cloak",
-        "url": "https://ringsdb.com/bundles/cards/131012.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2951,
-        "nome": "Bard son of Brand",
-        "url": "https://ringsdb.com/bundles/cards/18002.png",
-        "esfera": "spirit"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/21005.png"
     },
     {
         "tempo_segundos": 2951,
         "nome": "Beravor",
-        "url": "https://ringsdb.com/bundles/cards/01012.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2951,
-        "nome": "Brand son of Bain",
-        "url": "https://ringsdb.com/bundles/cards/502993.png",
-        "esfera": "tactics"
-    },
-    {
-        "tempo_segundos": 2967,
-        "nome": "Beravor",
-        "url": "https://ringsdb.com/bundles/cards/01012.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2982,
-        "nome": "Beravor",
-        "url": "https://ringsdb.com/bundles/cards/01012.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 2982,
-        "nome": "King of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3004,
-        "nome": "King of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png",
-        "esfera": "spirit"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/01012.png"
     },
     {
         "tempo_segundos": 3004,
         "nome": "A Test of Will",
-        "url": "https://ringsdb.com/bundles/cards/01050.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01050.png"
     },
     {
         "tempo_segundos": 3004,
         "nome": "The Galadhrim's Greeting",
-        "url": "https://ringsdb.com/bundles/cards/01046.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01046.png"
     },
     {
         "tempo_segundos": 3004,
         "nome": "Hasty Stroke",
-        "url": "https://ringsdb.com/bundles/cards/01048.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3071,
-        "nome": "Brand son of Bain",
-        "url": "https://ringsdb.com/bundles/cards/502993.png",
-        "esfera": "tactics"
-    },
-    {
-        "tempo_segundos": 3085,
-        "nome": "Brand son of Bain",
-        "url": "https://ringsdb.com/bundles/cards/502993.png",
-        "esfera": "tactics"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01048.png"
     },
     {
         "tempo_segundos": 3156,
         "nome": "Merry",
-        "url": "https://ringsdb.com/bundles/cards/21003.png",
-        "esfera": "leadership"
-    },
-    {
-        "tempo_segundos": 3201,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3228,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3235,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/21003.png"
     },
     {
         "tempo_segundos": 3242,
         "nome": "Gavin",
-        "url": "https://ringsdb.com/bundles/cards/301011.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/301011.png"
     },
     {
         "tempo_segundos": 3271,
         "nome": "Glorfindel",
-        "url": "https://ringsdb.com/bundles/cards/304102.png",
-        "esfera": "tactics"
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/304102.png"
     },
     {
-        "tempo_segundos": 3285,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3318,
-        "nome": "King of Dale",
-        "url": "https://ringsdb.com/bundles/cards/18008.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3318,
-        "nome": "Beravor",
-        "url": "https://ringsdb.com/bundles/cards/01012.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 3318,
+        "tempo_segundos": 3340,
         "nome": "Drinking Song",
-        "url": "https://ringsdb.com/bundles/cards/19116.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 3362,
-        "nome": "Beravor",
-        "url": "https://ringsdb.com/bundles/cards/01012.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/19116.png"
     },
     {
         "tempo_segundos": 3362,
         "nome": "Beregond",
-        "url": "https://ringsdb.com/bundles/cards/145003.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/145003.png"
     },
     {
-        "tempo_segundos": 3385,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3385,
+        "tempo_segundos": 3400,
         "nome": "Unexpected Courage",
-        "url": "https://ringsdb.com/bundles/cards/01057.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3417,
-        "nome": "Lanwyn",
-        "url": "https://ringsdb.com/bundles/cards/12030.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3435,
-        "nome": "Gavin",
-        "url": "https://ringsdb.com/bundles/cards/301011.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01057.png"
     },
     {
         "tempo_segundos": 3455,
         "nome": "Steed of Imladris",
-        "url": "https://ringsdb.com/bundles/cards/10059.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3484,
-        "nome": "Bard son of Brand",
-        "url": "https://ringsdb.com/bundles/cards/18002.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 3570,
-        "nome": "Bard son of Brand",
-        "url": "https://ringsdb.com/bundles/cards/18002.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/10059.png"
     },
     {
         "tempo_segundos": 3597,
         "nome": "Celduin Traveler",
-        "url": "https://ringsdb.com/bundles/cards/08089.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/08089.png"
     },
     {
-        "tempo_segundos": 3611,
+        "tempo_segundos": 3621,
         "nome": "Caldara",
-        "url": "https://ringsdb.com/bundles/cards/06107.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/06107.png"
     },
     {
         "tempo_segundos": 3621,
         "nome": "Dale Messenger",
-        "url": "https://ringsdb.com/bundles/cards/22111.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/22111.png"
     },
     {
         "tempo_segundos": 3643,
         "nome": "Warden of Healing",
-        "url": "https://ringsdb.com/bundles/cards/04083.png",
-        "esfera": "lore"
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/04083.png"
     },
     {
         "tempo_segundos": 3703,
         "nome": "Guardian of Esgaroth",
-        "url": "https://ringsdb.com/bundles/cards/19002.png",
-        "esfera": "leadership"
-    },
-    {
-        "tempo_segundos": 3720,
-        "nome": "Guardian of Esgaroth",
-        "url": "https://ringsdb.com/bundles/cards/19002.png",
-        "esfera": "leadership"
-    },
-    {
-        "tempo_segundos": 3753,
-        "nome": "Dale Messenger",
-        "url": "https://ringsdb.com/bundles/cards/22111.png",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 3777,
-        "nome": "Guardian of Esgaroth",
-        "url": "https://ringsdb.com/bundles/cards/19002.png",
-        "esfera": "leadership"
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/19002.png"
     },
     {
         "tempo_segundos": 3777,
         "nome": "Wild Stallion",
-        "url": "https://ringsdb.com/bundles/cards/19033.png",
-        "esfera": "spirit"
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/19033.png"
     },
     {
         "tempo_segundos": 3807,
@@ -486,6 +270,12 @@
         "esfera": "leadership"
     },
     {
+        "tempo_segundos": 3979,
+        "nome": "Guardian of Esgaroth",
+        "url": "https://ringsdb.com/bundles/cards/19002.png",
+        "esfera": "leadership"
+    },
+    {
         "tempo_segundos": 4012,
         "nome": "Celduin Traveler",
         "url": "https://ringsdb.com/bundles/cards/08089.png",
@@ -504,6 +294,48 @@
         "esfera": "tactics"
     },
     {
+        "tempo_segundos": 4058,
+        "nome": "Bow of Yew",
+        "url": "https://ringsdb.com/bundles/cards/18009.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4072,
+        "nome": "Rhovanion Outrider",
+        "url": "https://ringsdb.com/bundles/cards/12062.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4135,
+        "nome": "North Realm Lookout",
+        "url": "https://ringsdb.com/bundles/cards/18004.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4135,
+        "nome": "Bow of Yew",
+        "url": "https://ringsdb.com/bundles/cards/18009.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4149,
+        "nome": "Bow of Yew",
+        "url": "https://ringsdb.com/bundles/cards/18009.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4204,
+        "nome": "Bow of Yew",
+        "url": "https://ringsdb.com/bundles/cards/18009.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4215,
+        "nome": "King of Dale",
+        "url": "https://ringsdb.com/bundles/cards/18008.png",
+        "esfera": "spirit"
+    },
+    {
         "tempo_segundos": 4234,
         "nome": "Hauberk of Mail",
         "url": "https://ringsdb.com/bundles/cards/18007.png",
@@ -514,6 +346,12 @@
         "nome": "Dúnedain Warning",
         "url": "https://ringsdb.com/bundles/cards/02026.png",
         "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4261,
+        "nome": "King of Dale",
+        "url": "https://ringsdb.com/bundles/cards/18008.png",
+        "esfera": "spirit"
     },
     {
         "tempo_segundos": 4265,
@@ -534,6 +372,12 @@
         "esfera": "spirit"
     },
     {
+        "tempo_segundos": 4311,
+        "nome": "Guardian of Esgaroth",
+        "url": "https://ringsdb.com/bundles/cards/19002.png",
+        "esfera": "leadership"
+    },
+    {
         "tempo_segundos": 4330,
         "nome": "Armor of Erebor",
         "url": "https://ringsdb.com/bundles/cards/19120.png",
@@ -546,13 +390,67 @@
         "esfera": "spirit"
     },
     {
+        "tempo_segundos": 4352,
+        "nome": "Guardian of Esgaroth",
+        "url": "https://ringsdb.com/bundles/cards/19002.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4364,
+        "nome": "Wild Stallion",
+        "url": "https://ringsdb.com/bundles/cards/19033.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4381,
+        "nome": "Guardian of Esgaroth",
+        "url": "https://ringsdb.com/bundles/cards/19002.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4417,
+        "nome": "Valiant Determination",
+        "url": "https://ringsdb.com/bundles/cards/19092.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4436,
+        "nome": "Guardian of Esgaroth",
+        "url": "https://ringsdb.com/bundles/cards/19002.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4459,
+        "nome": "Squire's Helm",
+        "url": "https://ringsdb.com/bundles/cards/19003.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4464,
+        "nome": "Redwater Sentry",
+        "url": "https://ringsdb.com/bundles/cards/18003.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4491,
+        "nome": "Valiant Determination",
+        "url": "https://ringsdb.com/bundles/cards/19092.png",
+        "esfera": "spirit"
+    },
+    {
         "tempo_segundos": 4491,
         "nome": "Wellinghall Preserver",
         "url": "https://ringsdb.com/bundles/cards/10061.png",
         "esfera": "lore"
     },
     {
-        "tempo_segundos": 4526,
+        "tempo_segundos": 4504,
+        "nome": "Squire's Helm",
+        "url": "https://ringsdb.com/bundles/cards/19003.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4521,
         "nome": "Bartering",
         "url": "https://ringsdb.com/bundles/cards/18015.png",
         "esfera": "lore"
@@ -570,6 +468,36 @@
         "esfera": "spirit"
     },
     {
+        "tempo_segundos": 4614,
+        "nome": "Grey Cloak",
+        "url": "https://ringsdb.com/bundles/cards/19009.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4614,
+        "nome": "Spare Hood and Cloak",
+        "url": "https://ringsdb.com/bundles/cards/131012.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4642,
+        "nome": "Spare Hood and Cloak",
+        "url": "https://ringsdb.com/bundles/cards/131012.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4656,
+        "nome": "Spare Hood and Cloak",
+        "url": "https://ringsdb.com/bundles/cards/131012.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4703,
+        "nome": "Bartering",
+        "url": "https://ringsdb.com/bundles/cards/18015.png",
+        "esfera": "lore"
+    },
+    {
         "tempo_segundos": 4737,
         "nome": "To Arms!",
         "url": "https://ringsdb.com/bundles/cards/18013.png",
@@ -579,6 +507,42 @@
         "tempo_segundos": 4818,
         "nome": "Hasty Stroke",
         "url": "https://ringsdb.com/bundles/cards/01048.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4818,
+        "nome": "To Arms!",
+        "url": "https://ringsdb.com/bundles/cards/18013.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4835,
+        "nome": "Hasty Stroke",
+        "url": "https://ringsdb.com/bundles/cards/01048.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4870,
+        "nome": "Spare Hood and Cloak",
+        "url": "https://ringsdb.com/bundles/cards/131012.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4942,
+        "nome": "To Arms!",
+        "url": "https://ringsdb.com/bundles/cards/18013.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5007,
+        "nome": "To Arms!",
+        "url": "https://ringsdb.com/bundles/cards/18013.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5016,
+        "nome": "To Arms!",
+        "url": "https://ringsdb.com/bundles/cards/18013.png",
         "esfera": "spirit"
     },
     {
@@ -594,10 +558,22 @@
         "esfera": "leadership"
     },
     {
+        "tempo_segundos": 5151,
+        "nome": "Traffic from Dale",
+        "url": "https://ringsdb.com/bundles/cards/18012.png",
+        "esfera": "leadership"
+    },
+    {
         "tempo_segundos": 5257,
         "nome": "Resourceful",
         "url": "https://ringsdb.com/bundles/cards/04062.png",
         "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 5271,
+        "nome": "Traffic from Dale",
+        "url": "https://ringsdb.com/bundles/cards/18012.png",
+        "esfera": "leadership"
     },
     {
         "tempo_segundos": 5329,
@@ -606,13 +582,55 @@
         "esfera": "lore"
     },
     {
+        "tempo_segundos": 5392,
+        "nome": "Traffic from Dale",
+        "url": "https://ringsdb.com/bundles/cards/18012.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5422,
+        "nome": "Traffic from Dale",
+        "url": "https://ringsdb.com/bundles/cards/18012.png",
+        "esfera": "leadership"
+    },
+    {
         "tempo_segundos": 5452,
         "nome": "Drinking Song",
         "url": "https://ringsdb.com/bundles/cards/19116.png",
         "esfera": "lore"
     },
     {
+        "tempo_segundos": 5452,
+        "nome": "Beravor",
+        "url": "https://ringsdb.com/bundles/cards/01012.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 5482,
+        "nome": "Drinking Song",
+        "url": "https://ringsdb.com/bundles/cards/19116.png",
+        "esfera": "lore"
+    },
+    {
         "tempo_segundos": 5572,
+        "nome": "King of Dale",
+        "url": "https://ringsdb.com/bundles/cards/18008.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5572,
+        "nome": "Song of Healing",
+        "url": "https://ringsdb.com/bundles/cards/22112.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 5602,
+        "nome": "King of Dale",
+        "url": "https://ringsdb.com/bundles/cards/18008.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5602,
         "nome": "Song of Healing",
         "url": "https://ringsdb.com/bundles/cards/22112.png",
         "esfera": "lore"
@@ -624,10 +642,22 @@
         "esfera": "leadership"
     },
     {
+        "tempo_segundos": 5632,
+        "nome": "Wiglaf",
+        "url": "https://ringsdb.com/bundles/cards/19027.png",
+        "esfera": "leadership"
+    },
+    {
         "tempo_segundos": 5662,
         "nome": "Ancestral Armor",
         "url": "https://ringsdb.com/bundles/cards/19028.png",
         "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5722,
+        "nome": "Drinking Song",
+        "url": "https://ringsdb.com/bundles/cards/19116.png",
+        "esfera": "lore"
     },
     {
         "tempo_segundos": 6339,
