@@ -321,6 +321,36 @@
                 // Sort timeline chronologically
                 groupedTimeline = Object.values(groupedMap).sort((a, b) => a.time_seconds - b.time_seconds);
 
+                // =========================================================
+                // 💡 NEW LOGIC: Filter out consecutive mentions of the same card
+                // =========================================================
+                const COOLDOWN_SECONDS = 60; // Time window to ignore repeated cards
+                let lastSeenMemory = {};
+                let cleanedTimeline = [];
+
+                groupedTimeline.forEach(group => {
+                    let validCards = [];
+
+                    group.cards.forEach(card => {
+                        let lastSeenTime = lastSeenMemory[card.nome];
+
+                        // If the card is new, OR enough time has passed since its last mention
+                        if (lastSeenTime === undefined || (group.time_seconds - lastSeenTime) > COOLDOWN_SECONDS) {
+                            validCards.push(card);
+                            lastSeenMemory[card.nome] = group.time_seconds; // Update memory with current time
+                        }
+                    });
+
+                    // If the group still has cards after filtering, add it to the final timeline
+                    if (validCards.length > 0) {
+                        group.cards = validCards;
+                        cleanedTimeline.push(group);
+                    }
+                });
+
+                groupedTimeline = cleanedTimeline; // Replace with the clean version
+                // =========================================================
+
                 if (groupedTimeline.length === 0) {
                     statusMessage.textContent = "No cards found.";
                     return;
