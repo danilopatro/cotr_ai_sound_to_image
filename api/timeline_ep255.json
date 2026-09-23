@@ -1,0 +1,674 @@
+[
+    {
+        "tempo_segundos": 372,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 372,
+        "nome": "Legolas",
+        "url": "https://ringsdb.com/bundles/cards/16002.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 372,
+        "nome": "Gimli",
+        "url": "https://ringsdb.com/bundles/cards/16001.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 504,
+        "nome": "Rossiel",
+        "url": "https://ringsdb.com/bundles/cards/10028.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 1563,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1730,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1867,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1871,
+        "nome": "Sword that was Broken",
+        "url": "https://ringsdb.com/bundles/cards/04055.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 1928,
+        "nome": "Damrod",
+        "url": "https://ringsdb.com/bundles/cards/144003.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 1957,
+        "nome": "Ethir Swordsman",
+        "url": "https://ringsdb.com/bundles/cards/06006.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 1993,
+        "nome": "Ethir Swordsman",
+        "url": "https://ringsdb.com/bundles/cards/06006.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 2315,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2316,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2701,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2813,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2815,
+        "nome": "Sword that was Broken",
+        "url": "https://ringsdb.com/bundles/cards/04055.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 2841,
+        "nome": "Elven-light",
+        "url": "https://ringsdb.com/bundles/cards/10145.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 2905,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2955,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2985,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2991,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3004,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3183,
+        "nome": "Elessar",
+        "url": "https://ringsdb.com/bundles/cards/306185.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 3184,
+        "nome": "Steward of Gondor",
+        "url": "https://ringsdb.com/bundles/cards/01026.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 3204,
+        "nome": "Unexpected Courage",
+        "url": "https://ringsdb.com/bundles/cards/01057.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 3205,
+        "nome": "A Test of Will",
+        "url": "https://ringsdb.com/bundles/cards/01050.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 3206,
+        "nome": "The Galadhrim's Greeting",
+        "url": "https://ringsdb.com/bundles/cards/01046.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 3208,
+        "nome": "Misty Mountain Journeyman",
+        "url": "https://ringsdb.com/bundles/cards/22144.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 3210,
+        "nome": "Dúnedain Hunter",
+        "url": "https://ringsdb.com/bundles/cards/09004.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 3217,
+        "nome": "Warden of Healing",
+        "url": "https://ringsdb.com/bundles/cards/04083.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3218,
+        "nome": "Daeron's Runes",
+        "url": "https://ringsdb.com/bundles/cards/04108.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3219,
+        "nome": "Forest Snare",
+        "url": "https://ringsdb.com/bundles/cards/01069.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3221,
+        "nome": "Quickbeam",
+        "url": "https://ringsdb.com/bundles/cards/17135.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 3223,
+        "nome": "Elrond",
+        "url": "https://ringsdb.com/bundles/cards/142005.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3230,
+        "nome": "Ranger of Cardolan",
+        "url": "https://ringsdb.com/bundles/cards/10010.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3231,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3233,
+        "nome": "A Good Harvest",
+        "url": "https://ringsdb.com/bundles/cards/06010.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3234,
+        "nome": "Treebeard",
+        "url": "https://ringsdb.com/bundles/cards/143003.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3447,
+        "nome": "Damrod",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/144003.png"
+    },
+    {
+        "tempo_segundos": 3592,
+        "nome": "Armored Destrier",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/12059.png"
+    },
+    {
+        "tempo_segundos": 3622,
+        "nome": "Aragorn",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/306183.png"
+    },
+    {
+        "tempo_segundos": 3633,
+        "nome": "Thorongil",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/22146.png"
+    },
+    {
+        "tempo_segundos": 3658,
+        "nome": "Guardian of Arnor",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/10116.png"
+    },
+    {
+        "tempo_segundos": 3661,
+        "nome": "Amarthiúl",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/10115.png"
+    },
+    {
+        "tempo_segundos": 3664,
+        "nome": "Unexpected Courage",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01057.png"
+    },
+    {
+        "tempo_segundos": 3665,
+        "nome": "Ancestral Armor",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/19028.png"
+    },
+    {
+        "tempo_segundos": 3667,
+        "nome": "Dúnedain Warning",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/02026.png"
+    },
+    {
+        "tempo_segundos": 3684,
+        "nome": "Sarn Ford Sentry",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/09005.png"
+    },
+    {
+        "tempo_segundos": 3776,
+        "nome": "Landroval",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/02053.png"
+    },
+    {
+        "tempo_segundos": 3845,
+        "nome": "Aragorn",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/306183.png"
+    },
+    {
+        "tempo_segundos": 3871,
+        "nome": "Aragorn",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/306183.png"
+    },
+    {
+        "tempo_segundos": 3897,
+        "nome": "Aragorn",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/306183.png"
+    },
+    {
+        "tempo_segundos": 3916,
+        "nome": "Aragorn",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/306183.png"
+    },
+    {
+        "tempo_segundos": 3920,
+        "nome": "Halbarad",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/145006.png"
+    },
+    {
+        "tempo_segundos": 3921,
+        "nome": "Amarthiúl",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/10115.png"
+    },
+    {
+        "tempo_segundos": 4005,
+        "nome": "Beravor",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/01012.png"
+    },
+    {
+        "tempo_segundos": 4037,
+        "nome": "Idraen",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/08025.png"
+    },
+    {
+        "tempo_segundos": 4043,
+        "nome": "Mablung",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/144005.png"
+    },
+    {
+        "tempo_segundos": 4044,
+        "nome": "Damrod",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/144003.png"
+    },
+    {
+        "tempo_segundos": 4077,
+        "nome": "Amarthiúl",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/10115.png"
+    },
+    {
+        "tempo_segundos": 4138,
+        "nome": "Gilraen",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/306182.png"
+    },
+    {
+        "tempo_segundos": 4225,
+        "nome": "Son of Arnor",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/01015.png"
+    },
+    {
+        "tempo_segundos": 4285,
+        "nome": "Son of Arnor",
+        "url": "https://ringsdb.com/bundles/cards/01015.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4323,
+        "nome": "Guardian of Arnor",
+        "url": "https://ringsdb.com/bundles/cards/10116.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4327,
+        "nome": "Fornost Bowman",
+        "url": "https://ringsdb.com/bundles/cards/10143.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4330,
+        "nome": "Warden of Annúminas",
+        "url": "https://ringsdb.com/bundles/cards/09006.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4428,
+        "nome": "Dúnedain Hunter",
+        "url": "https://ringsdb.com/bundles/cards/09004.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4457,
+        "nome": "Weather Hills Watchman",
+        "url": "https://ringsdb.com/bundles/cards/09003.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4461,
+        "nome": "Andrath Guardsman",
+        "url": "https://ringsdb.com/bundles/cards/17002.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4479,
+        "nome": "Dunedain Lookout",
+        "url": "https://ringsdb.com/bundles/cards/17062.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4479,
+        "nome": "Northern Bowmaster",
+        "url": "https://ringsdb.com/bundles/cards/22086.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4488,
+        "nome": "Misty Mountain Journeyman",
+        "url": "https://ringsdb.com/bundles/cards/22144.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4510,
+        "nome": "Ranger of Cardolan",
+        "url": "https://ringsdb.com/bundles/cards/10010.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 4528,
+        "nome": "A Very Good Tale",
+        "url": "https://ringsdb.com/bundles/cards/131014.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4580,
+        "nome": "Eldahir",
+        "url": "https://ringsdb.com/bundles/cards/12031.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4870,
+        "nome": "Ranger of Cardolan",
+        "url": "https://ringsdb.com/bundles/cards/10010.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 4894,
+        "nome": "Northern Bowmaster",
+        "url": "https://ringsdb.com/bundles/cards/22086.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4933,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 4948,
+        "nome": "Bree-land Protector",
+        "url": "https://ringsdb.com/bundles/cards/303080.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5130,
+        "nome": "Forest Snare",
+        "url": "https://ringsdb.com/bundles/cards/01069.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 5134,
+        "nome": "Outmatched",
+        "url": "https://ringsdb.com/bundles/cards/19062.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 5145,
+        "nome": "Subdued",
+        "url": "https://ringsdb.com/bundles/cards/305153.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 5211,
+        "nome": "Silver Lamp",
+        "url": "https://ringsdb.com/bundles/cards/07009.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5234,
+        "nome": "Heir of Valandil",
+        "url": "https://ringsdb.com/bundles/cards/09010.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5255,
+        "nome": "King of Dale",
+        "url": "https://ringsdb.com/bundles/cards/18008.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5265,
+        "nome": "Steward of Gondor",
+        "url": "https://ringsdb.com/bundles/cards/01026.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5334,
+        "nome": "Northern Tracker",
+        "url": "https://ringsdb.com/bundles/cards/01045.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5353,
+        "nome": "Path of Need",
+        "url": "https://ringsdb.com/bundles/cards/04103.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5431,
+        "nome": "Armored Destrier",
+        "url": "https://ringsdb.com/bundles/cards/12059.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5486,
+        "nome": "Silver Lamp",
+        "url": "https://ringsdb.com/bundles/cards/07009.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5557,
+        "nome": "Gilraen",
+        "url": "https://ringsdb.com/bundles/cards/306182.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5732,
+        "nome": "Andúril",
+        "url": "https://ringsdb.com/bundles/cards/306191.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 5784,
+        "nome": "Dúnedain Warning",
+        "url": "https://ringsdb.com/bundles/cards/02026.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5797,
+        "nome": "Dúnedain Mark",
+        "url": "https://ringsdb.com/bundles/cards/02002.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5797,
+        "nome": "Dúnedain Signal",
+        "url": "https://ringsdb.com/bundles/cards/02117.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5797,
+        "nome": "Dúnedain Quest",
+        "url": "https://ringsdb.com/bundles/cards/02051.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5805,
+        "nome": "Dúnedain Remedy",
+        "url": "https://ringsdb.com/bundles/cards/12084.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5911,
+        "nome": "Dúnedain Cache",
+        "url": "https://ringsdb.com/bundles/cards/02097.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5972,
+        "nome": "Dúnedain Message",
+        "url": "https://ringsdb.com/bundles/cards/10056.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5985,
+        "nome": "Gather Information",
+        "url": "https://ringsdb.com/bundles/cards/09014.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 6048,
+        "nome": "Ranger Summons",
+        "url": "https://ringsdb.com/bundles/cards/09007.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 6078,
+        "nome": "Rune-master",
+        "url": "https://ringsdb.com/bundles/cards/12110.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 6285,
+        "nome": "Wait no Longer",
+        "url": "https://ringsdb.com/bundles/cards/17005.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 6297,
+        "nome": "Dúnedain Hunter",
+        "url": "https://ringsdb.com/bundles/cards/09004.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 6346,
+        "nome": "Descendants of Kings",
+        "url": "https://ringsdb.com/bundles/cards/10030.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 6412,
+        "nome": "Knowledge of the Enemy",
+        "url": "https://ringsdb.com/bundles/cards/22139.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 6462,
+        "nome": "Steward of Gondor",
+        "url": "https://ringsdb.com/bundles/cards/01026.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 6514,
+        "nome": "Wealth of Gondor",
+        "url": "https://ringsdb.com/bundles/cards/05006.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 6628,
+        "nome": "Squire of the Citadel",
+        "url": "https://ringsdb.com/bundles/cards/06108.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 7699,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 7709,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 7869,
+        "nome": "Lobelia Sackville-Baggins",
+        "url": "https://ringsdb.com/bundles/cards/307004.png",
+        "esfera": "tactics"
+    }
+]
