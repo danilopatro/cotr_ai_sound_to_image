@@ -356,7 +356,18 @@
                     return;
                 }
 
-                statusMessage.textContent = `${groupedTimeline.length} moments synced. Press Play!`;
+                // =========================================================
+                // Counting unique cards
+                // =========================================================
+                const uniqueCardsSet = new Set();
+                groupedTimeline.forEach(group => {
+                    group.cards.forEach(card => {
+                        uniqueCardsSet.add(card.nome); // Set ignores repeated names automatically
+                    });
+                });
+
+                statusMessage.textContent = `${uniqueCardsSet.size} unique cards across ${groupedTimeline.length} moments. Press Play!`;
+                // =========================================================
                 
                 groupedTimeline.forEach((group, index) => {
                     
