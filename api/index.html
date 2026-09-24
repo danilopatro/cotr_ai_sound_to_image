@@ -29,8 +29,14 @@
         .player-container {
             flex: 1; 
             min-width: 0; 
-            background: #2a2a2a;
+            background-color: #2a2a2a;
+            /* 💡 NOVO: Configurações da imagem de cabeçalho */
+            background-image: url('/api/header.jpg');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 100% auto; /* Faz a imagem ocupar 100% da largura do container */
             padding: 30px;
+            padding-top: 220px; /* 💡 ADICIONADO: Empurra o conteúdo para baixo da imagem. Ajuste este valor conforme a altura da sua foto */
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             text-align: center;
@@ -43,6 +49,7 @@
             border-radius: 8px;
             border: 1px solid #444;
             display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra para destacar sobre o fundo */
         }
         
         .episode-selector label {
@@ -267,6 +274,7 @@
         @media (max-width: 950px) {
             .layout-wrapper { flex-direction: column; }
             .sidebar { width: 100%; max-height: 350px; box-sizing: border-box; }
+            .player-container { padding-top: 150px; } /* Ajuste menor para celulares */
         }
     </style>
 </head>
@@ -461,7 +469,7 @@
 
                     groupedTimeline = Object.values(groupedMap).sort((a, b) => a.time_seconds - b.time_seconds);
 
-                    const COOLDOWN_SECONDS = 180; 
+                    const COOLDOWN_SECONDS = 60; 
                     let lastSeenMemory = {};
                     let cleanedTimeline = [];
 
