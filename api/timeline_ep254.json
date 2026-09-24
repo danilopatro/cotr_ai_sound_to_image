@@ -1,0 +1,224 @@
+[
+    {
+        "tempo_segundos": 679,
+        "nome": "Horseback Archer",
+        "url": "https://ringsdb.com/bundles/cards/01030.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 679,
+        "nome": "Silverlode Archer",
+        "url": "https://ringsdb.com/bundles/cards/01017.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 766,
+        "nome": "Haldir of Lórien",
+        "url": "https://ringsdb.com/bundles/cards/08056.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 874,
+        "nome": "The Galadhrim's Greeting",
+        "url": "https://ringsdb.com/bundles/cards/01046.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 1655,
+        "nome": "Hasty Stroke",
+        "url": "https://ringsdb.com/bundles/cards/01048.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 1700,
+        "nome": "Messenger of the King",
+        "url": "https://ringsdb.com/bundles/cards/22134.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1865,
+        "nome": "Frodo Baggins",
+        "url": "https://ringsdb.com/bundles/cards/500006.png",
+        "esfera": "fellowship"
+    },
+    {
+        "tempo_segundos": 2029,
+        "nome": "Nalir",
+        "url": "https://ringsdb.com/bundles/cards/132001.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 2360,
+        "nome": "Damrod",
+        "url": "https://ringsdb.com/bundles/cards/144003.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2381,
+        "nome": "Messenger of the King",
+        "url": "https://ringsdb.com/bundles/cards/22134.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2420,
+        "nome": "Anborn",
+        "url": "https://ringsdb.com/bundles/cards/144004.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 2484,
+        "nome": "Thranduil",
+        "url": "https://ringsdb.com/bundles/cards/19056.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 2575,
+        "nome": "Northern Tracker",
+        "url": "https://ringsdb.com/bundles/cards/01045.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 2694,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/306183.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2694,
+        "nome": "Damrod",
+        "url": "https://ringsdb.com/bundles/cards/144003.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2694,
+        "nome": "Gríma",
+        "url": "https://ringsdb.com/bundles/cards/07002.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2710,
+        "nome": "Keys of Orthanc",
+        "url": "https://ringsdb.com/bundles/cards/07010.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2744,
+        "nome": "Rumour from the Earth",
+        "url": "https://ringsdb.com/bundles/cards/02124.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2752,
+        "nome": "Henamarth Riversong",
+        "url": "https://ringsdb.com/bundles/cards/01060.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3467,
+        "nome": "Ranger Spikes",
+        "url": "https://ringsdb.com/bundles/cards/05017.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3617,
+        "nome": "Forest Snare",
+        "url": "https://ringsdb.com/bundles/cards/01069.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3634,
+        "nome": "Poisoned Stakes",
+        "url": "https://ringsdb.com/bundles/cards/06115.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3787,
+        "nome": "Damrod",
+        "url": "https://ringsdb.com/bundles/cards/144003.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3912,
+        "nome": "Ranger Spikes",
+        "url": "https://ringsdb.com/bundles/cards/05017.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4021,
+        "nome": "Damrod",
+        "url": "https://ringsdb.com/bundles/cards/144003.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4229,
+        "nome": "Anborn",
+        "url": "https://ringsdb.com/bundles/cards/144004.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4288,
+        "nome": "Entangling Nets",
+        "url": "https://ringsdb.com/bundles/cards/12064.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4326,
+        "nome": "Guardian of Ithilien",
+        "url": "https://ringsdb.com/bundles/cards/12144.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4376,
+        "nome": "Faramir",
+        "url": "https://ringsdb.com/bundles/cards/21005.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4411,
+        "nome": "Mablung",
+        "url": "https://ringsdb.com/bundles/cards/144005.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4456,
+        "nome": "Gondorian Shield",
+        "url": "https://ringsdb.com/bundles/cards/06005.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4511,
+        "nome": "Robin Smallburrow",
+        "url": "https://ringsdb.com/bundles/cards/12089.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4529,
+        "nome": "Erebor Hammersmith",
+        "url": "https://ringsdb.com/bundles/cards/01059.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4535,
+        "nome": "Master of the Forge",
+        "url": "https://ringsdb.com/bundles/cards/04134.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4658,
+        "nome": "It Should Be Spared",
+        "url": "https://ringsdb.com/bundles/cards/300011.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4702,
+        "nome": "Northern Tracker",
+        "url": "https://ringsdb.com/bundles/cards/01045.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5065,
+        "nome": "Masters of the Forest",
+        "url": "https://ringsdb.com/bundles/cards/310084.png",
+        "esfera": "neutral"
+    }
+]
