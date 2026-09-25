@@ -317,44 +317,9 @@
     </footer>
 
     <script>
-        const episodesConfig = {
-            "256": {
-                title: "Episode 256",
-                subtitle: "Seastan and Dale vs Evil",
-                audioSrc: "https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_256.mp3"
-            },
-            "255": {
-                title: "Episode 255",
-                subtitle: "Deck of Theseus",
-                audioSrc: "https://traffic.libsyn.com/cotr/CotR_255.mp3"
-            },
-            "254": {
-                title: "Episode 254",
-                subtitle: "Mighty Morphin' Nalir Rangers",
-                audioSrc: "https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_254.mp3"
-            },
-            "253": {
-                title: "Episode 253",
-                subtitle: "3 Trial Revival",
-                audioSrc: "https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_253.mp3"
-            },
-            "252": {
-                title: "Episode 252",
-                subtitle: "Quinceanera",
-                audioSrc: "https://traffic.libsyn.com/secure/cotr/Cardboard_of_the_Rings_252_mixdown_3.mp3"
-            },
-            "251": {
-                title: "Episode 251",
-                subtitle: "Project Hail Merry",
-                audioSrc: "https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_251.mp3"
-            },
-            "250": {
-                title: "Episode 250",
-                subtitle: "Huorny Jail",
-                audioSrc: "https://traffic.libsyn.com/cotr/Cardboard_of_the_Rings_250_take_2.mp3"
-            }
-        };
-
+        // A variável agora inicia vazia e será preenchida pela Inteligência do Backend
+        let episodesConfig = {};
+        
         let groupedTimeline = [];
         let currentCardIndex = -1;
         
@@ -392,9 +357,13 @@
             carousel.scrollLeft += evt.deltaY; 
         });
 
+        // 💡 BUSCA INTEGRADA: Puxa os JSONs locais + O mapeamento do RSS oficial
         fetch('/api/episodes')
             .then(response => response.json())
-            .then(availableFiles => {
+            .then(data => {
+                const availableFiles = data.available_episodes;
+                episodesConfig = data.config; // Carrega a biblioteca global gerada pelo Python
+                
                 episodeSelect.innerHTML = ''; 
                 
                 if (!availableFiles || availableFiles.length === 0) {
@@ -405,6 +374,7 @@
                     return;
                 }
 
+                // Cruza os arquivos que temos na pasta com a biblioteca do RSS
                 availableFiles.forEach(epId => {
                     const option = document.createElement('option');
                     option.value = epId;
@@ -412,7 +382,8 @@
                     if (episodesConfig[epId]) {
                         option.textContent = `${episodesConfig[epId].title}: ${episodesConfig[epId].subtitle}`;
                     } else {
-                        option.textContent = `Episode ${epId} (Data only)`;
+                        // Fallback de segurança para episódios antigos fora do feed atual
+                        option.textContent = `Episode ${epId} (Data only - Missing Audio)`;
                     }
                     
                     episodeSelect.appendChild(option);
@@ -420,6 +391,7 @@
 
                 episodeSelect.disabled = false;
                 
+                // Dispara o carregamento do primeiro da lista
                 if (episodeSelect.options.length > 0) {
                     loadEpisode(episodeSelect.options[0].value);
                 }
@@ -437,7 +409,7 @@
         function loadEpisode(epId) {
             const epData = episodesConfig[epId] || {
                 title: `Episode ${epId}`,
-                subtitle: "Missing audio configuration",
+                subtitle: "Missing audio configuration from RSS",
                 audioSrc: ""
             };
 
@@ -476,7 +448,7 @@
 
                     groupedTimeline = Object.values(groupedMap).sort((a, b) => a.time_seconds - b.time_seconds);
 
-                    const COOLDOWN_SECONDS = 180; 
+                    const COOLDOWN_SECONDS = 60; 
                     let lastSeenMemory = {};
                     let cleanedTimeline = [];
 
