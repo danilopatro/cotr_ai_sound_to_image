@@ -12,10 +12,10 @@
         "esfera": "spirit"
     },
     {
-        "tempo_segundos": 820,
-        "nome": "Gandalf",
-        "url": "https://ringsdb.com/bundles/cards/142002.png",
-        "esfera": "neutral"
+        "tempo_segundos": 912,
+        "nome": "Sneak Attack",
+        "url": "https://ringsdb.com/bundles/cards/01023.png",
+        "esfera": "leadership"
     },
     {
         "tempo_segundos": 937,
@@ -24,31 +24,19 @@
         "esfera": "spirit"
     },
     {
-        "tempo_segundos": 958,
-        "nome": "The One Ring",
-        "url": "https://ringsdb.com/bundles/cards/21001.png",
-        "esfera": "neutral"
-    },
-    {
         "tempo_segundos": 988,
         "nome": "Ranger of the North",
         "url": "https://ringsdb.com/bundles/cards/09015.png",
         "esfera": "neutral"
     },
     {
-        "tempo_segundos": 1008,
-        "nome": "Gandalf",
-        "url": "https://ringsdb.com/bundles/cards/142002.png",
-        "esfera": "neutral"
-    },
-    {
-        "tempo_segundos": 1024,
+        "tempo_segundos": 1023,
         "nome": "Mirror of Galadriel",
         "url": "https://ringsdb.com/bundles/cards/08118.png",
         "esfera": "spirit"
     },
     {
-        "tempo_segundos": 1048,
+        "tempo_segundos": 1133,
         "nome": "Gandalf",
         "url": "https://ringsdb.com/bundles/cards/142002.png",
         "esfera": "neutral"
@@ -72,28 +60,10 @@
         "esfera": "spirit"
     },
     {
-        "tempo_segundos": 1856,
-        "nome": "Keep Watch",
-        "url": "https://ringsdb.com/bundles/cards/17059.png",
-        "esfera": "tactics"
-    },
-    {
         "tempo_segundos": 1872,
         "nome": "Keen as Lances",
         "url": "https://ringsdb.com/bundles/cards/10037.png",
         "esfera": "neutral"
-    },
-    {
-        "tempo_segundos": 1878,
-        "nome": "Arwen Undómiel",
-        "url": "https://ringsdb.com/bundles/cards/10140.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 2052,
-        "nome": "Second Breakfast",
-        "url": "https://ringsdb.com/bundles/cards/02027.png",
-        "esfera": "leadership"
     },
     {
         "tempo_segundos": 2405,
@@ -154,5 +124,17 @@
         "nome": "Longbeard Orc Slayer",
         "url": "https://ringsdb.com/bundles/cards/01018.png",
         "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4062,
+        "nome": "Skinbark",
+        "url": "https://ringsdb.com/bundles/cards/144006.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 5023,
+        "nome": "Darth Vader",
+        "url": "https://ringsdb.com/bundles/cards/309038.png",
+        "esfera": "neutral"
     }
 ]
