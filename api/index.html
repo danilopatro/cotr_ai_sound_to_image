@@ -538,7 +538,6 @@
                                 const urlParts = safeUrl.split('/');
                                 const imageFile = urlParts[urlParts.length - 1]; 
                                 const cardId = imageFile.split('.')[0];
-                                console.log(safeUrl + ':' + imageFile.split('.')[0]);
 
                                 linksWrapper.innerHTML += `
                                     <a href="https://ringsdb.com/card/${cardId}" target="_blank" class="ringsdb-btn" style="background-color: ${cardColor};" onclick="event.stopPropagation();">
