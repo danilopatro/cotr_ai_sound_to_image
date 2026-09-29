@@ -1,170 +1,122 @@
 [
     {
-        "tempo_segundos": 7,
-        "nome": "Let Us Sing Together",
-        "url": "https://ringsdb.com/bundles/cards/307016.png",
-        "esfera": "spirit"
-    },
-    {
-        "tempo_segundos": 326,
-        "nome": "Tom Bombadil",
-        "url": "https://ringsdb.com/bundles/cards/22010.png",
-        "esfera": "neutral"
-    },
-    {
-        "tempo_segundos": 910,
-        "nome": "Sneak Attack",
-        "esfera": "leadership",
-        "url": "https://ringsdb.com/bundles/cards/01023.png"
-    },
-    {
-        "tempo_segundos": 958,
-        "nome": "The One Ring",
-        "esfera": "neutral",
-        "url": "https://ringsdb.com/bundles/cards/21001.png"
-    },
-    {
-        "tempo_segundos": 1044,
-        "nome": "Gandalf",
-        "esfera": "neutral",
-        "url": "https://ringsdb.com/bundles/cards/142002.png"
-    },
-    {
-        "tempo_segundos": 1513,
-        "nome": "A Test of Will",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/01050.png"
-    },
-    {
-        "tempo_segundos": 1546,
-        "nome": "Northern Tracker",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/01045.png"
-    },
-    {
-        "tempo_segundos": 1856,
-        "nome": "Gather Information",
-        "esfera": "neutral",
-        "url": "https://ringsdb.com/bundles/cards/09014.png"
-    },
-    {
-        "tempo_segundos": 1856,
-        "nome": "Double Back",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/10034.png"
-    },
-    {
-        "tempo_segundos": 1856,
-        "nome": "Keep Watch",
-        "esfera": "tactics",
-        "url": "https://ringsdb.com/bundles/cards/17059.png"
-    },
-    {
-        "tempo_segundos": 1872,
-        "nome": "Keen as Lances",
-        "esfera": "neutral",
-        "url": "https://ringsdb.com/bundles/cards/10037.png"
-    },
-    {
-        "tempo_segundos": 1878,
-        "nome": "Arwen Undómiel",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/10140.png"
-    },
-    {
-        "tempo_segundos": 2052,
-        "nome": "Second Breakfast",
-        "esfera": "leadership",
-        "url": "https://ringsdb.com/bundles/cards/02027.png"
-    },
-    {
-        "tempo_segundos": 2146,
-        "nome": "Against the Shadow",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/06038.png"
-    },
-    {
-        "tempo_segundos": 2713,
+        "tempo_segundos": 820,
         "nome": "Gandalf",
         "url": "https://ringsdb.com/bundles/cards/142002.png",
         "esfera": "neutral"
     },
     {
-        "tempo_segundos": 3014,
-        "nome": "Quickbeam",
-        "esfera": "lore",
-        "url": "https://ringsdb.com/bundles/cards/143006.png"
+        "tempo_segundos": 910,
+        "nome": "Sneak Attack",
+        "url": "https://ringsdb.com/bundles/cards/01023.png",
+        "esfera": "leadership"
     },
     {
-        "tempo_segundos": 3121,
+        "tempo_segundos": 920,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 958,
+        "nome": "The One Ring",
+        "url": "https://ringsdb.com/bundles/cards/21001.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1008,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1498,
+        "nome": "A Test of Will",
+        "url": "https://ringsdb.com/bundles/cards/01050.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 1546,
+        "nome": "Northern Tracker",
+        "url": "https://ringsdb.com/bundles/cards/01045.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 1856,
+        "nome": "Gather Information",
+        "url": "https://ringsdb.com/bundles/cards/09014.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1856,
+        "nome": "Double Back",
+        "url": "https://ringsdb.com/bundles/cards/10034.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 1856,
+        "nome": "Keep Watch",
+        "url": "https://ringsdb.com/bundles/cards/17059.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 1872,
+        "nome": "Keen as Lances",
+        "url": "https://ringsdb.com/bundles/cards/10037.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2052,
+        "nome": "Second Breakfast",
+        "url": "https://ringsdb.com/bundles/cards/02027.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 2647,
+        "nome": "Mirror of Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/08118.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 3014,
+        "nome": "Quickbeam",
+        "url": "https://ringsdb.com/bundles/cards/143006.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3221,
         "nome": "Bond of Friendship",
-        "esfera": "neutral",
-        "url": "https://ringsdb.com/bundles/cards/22147.png"
+        "url": "https://ringsdb.com/bundles/cards/22147.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3308,
+        "nome": "Rosie Cotton",
+        "url": "https://ringsdb.com/bundles/cards/146005.png",
+        "esfera": "leadership"
     },
     {
         "tempo_segundos": 3314,
-        "nome": "Rosie Cotton",
-        "esfera": "leadership",
-        "url": "https://ringsdb.com/bundles/cards/146005.png"
+        "nome": "Elendilmir",
+        "url": "https://ringsdb.com/bundles/cards/306187.png",
+        "esfera": "spirit"
     },
     {
         "tempo_segundos": 3323,
-        "nome": "Elendilmir",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/306187.png"
+        "nome": "Fireside Song",
+        "url": "https://ringsdb.com/bundles/cards/17061.png",
+        "esfera": "spirit"
     },
     {
         "tempo_segundos": 3332,
-        "nome": "Fireside Song",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/17061.png"
-    },
-    {
-        "tempo_segundos": 3337,
         "nome": "Messenger of the King",
-        "esfera": "neutral",
-        "url": "https://ringsdb.com/bundles/cards/22134.png"
-    },
-    {
-        "tempo_segundos": 3624,
-        "nome": "Heirs of Earendil",
-        "esfera": "spirit",
-        "url": "https://ringsdb.com/bundles/cards/17115.png"
+        "url": "https://ringsdb.com/bundles/cards/22134.png",
+        "esfera": "neutral"
     },
     {
         "tempo_segundos": 4048,
         "nome": "Sneak Attack",
-        "esfera": "leadership",
-        "url": "https://ringsdb.com/bundles/cards/01023.png"
-    },
-    {
-        "tempo_segundos": 4048,
-        "nome": "Longbeard Orc Slayer",
-        "esfera": "leadership",
-        "url": "https://ringsdb.com/bundles/cards/01018.png"
-    },
-    {
-        "tempo_segundos": 4062,
-        "nome": "Elladan",
-        "esfera": "tactics",
-        "url": "https://ringsdb.com/bundles/cards/04028.png"
-    },
-    {
-        "tempo_segundos": 4062,
-        "nome": "Elrohir",
-        "esfera": "leadership",
-        "url": "https://ringsdb.com/bundles/cards/04001.png"
-    },
-    {
-        "tempo_segundos": 4062,
-        "nome": "Skinbark",
-        "esfera": "tactics",
-        "url": "https://ringsdb.com/bundles/cards/144006.png"
-    },
-    {
-        "tempo_segundos": 4167,
-        "nome": "Boromir",
-        "esfera": "tactics",
-        "url": "https://ringsdb.com/bundles/cards/142004.png"
+        "url": "https://ringsdb.com/bundles/cards/01023.png",
+        "esfera": "leadership"
     }
 ]
