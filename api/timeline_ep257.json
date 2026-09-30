@@ -30,7 +30,13 @@
         "esfera": "neutral"
     },
     {
-        "tempo_segundos": 1498,
+        "tempo_segundos": 1333,
+        "nome": "Old Bogey-stories",
+        "url": "https://ringsdb.com/bundles/cards/147024.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1493,
         "nome": "A Test of Will",
         "url": "https://ringsdb.com/bundles/cards/01050.png",
         "esfera": "spirit"
@@ -78,6 +84,12 @@
         "esfera": "spirit"
     },
     {
+        "tempo_segundos": 2713,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
         "tempo_segundos": 3014,
         "nome": "Quickbeam",
         "url": "https://ringsdb.com/bundles/cards/143006.png",
@@ -108,15 +120,21 @@
         "esfera": "spirit"
     },
     {
-        "tempo_segundos": 3332,
-        "nome": "Messenger of the King",
-        "url": "https://ringsdb.com/bundles/cards/22134.png",
-        "esfera": "neutral"
-    },
-    {
         "tempo_segundos": 4048,
         "nome": "Sneak Attack",
         "url": "https://ringsdb.com/bundles/cards/01023.png",
         "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4048,
+        "nome": "Longbeard Orc Slayer",
+        "url": "https://ringsdb.com/bundles/cards/01018.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4817,
+        "nome": "Boromir",
+        "url": "https://ringsdb.com/bundles/cards/142004.png",
+        "esfera": "tactics"
     }
 ]
