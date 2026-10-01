@@ -20,14 +20,14 @@
     {
         "tempo_segundos": 5740,
         "nome": "Gandalf",
-        "url": "https://ringsdb.com/bundles/cards/142002.png",
-        "esfera": "neutral"
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/142002.png"
     },
     {
         "tempo_segundos": 6403,
         "nome": "Rosie Cotton",
-        "esfera": "leadership",
-        "url": "https://ringsdb.com/bundles/cards/146005.png"
+        "url": "https://ringsdb.com/bundles/cards/146005.png",
+        "esfera": "leadership"
     },
     {
         "tempo_segundos": 7805,
@@ -37,8 +37,8 @@
     },
     {
         "tempo_segundos": 7831,
-        "nome": "Eowyn",
-        "url": "",
+        "nome": "Éowyn",
+        "url": "https://ringsdb.com/bundles/cards/01007.png",
         "esfera": "spirit"
     },
     {
@@ -48,22 +48,16 @@
         "esfera": "lore"
     },
     {
-        "tempo_segundos": 7857,
-        "nome": "Eowyn",
-        "url": "",
-        "esfera": "tactics"
-    },
-    {
         "tempo_segundos": 7900,
-        "nome": "Flame of the West",
+        "nome": "Men of the West",
         "esfera": "leadership",
-        "url": ""
+        "url": "https://ringsdb.com/bundles/cards/06083.png"
     },
     {
         "tempo_segundos": 7998,
-        "nome": "Falco Boffin",
+        "nome": "Folco Boffin",
         "esfera": "lore",
-        "url": ""
+        "url": "https://ringsdb.com/bundles/cards/17109.png"
     },
     {
         "tempo_segundos": 8659,
@@ -78,27 +72,15 @@
         "esfera": "spirit"
     },
     {
-        "tempo_segundos": 10517,
-        "nome": "The Hunt for Gollum",
-        "url": "",
-        "esfera": "neutral"
-    },
-    {
         "tempo_segundos": 10544,
         "nome": "Gondorian Spearman",
         "url": "https://ringsdb.com/bundles/cards/01029.png",
         "esfera": "tactics"
     },
     {
-        "tempo_segundos": 10562,
+        "tempo_segundos": 10558,
         "nome": "Song of Kings",
         "url": "https://ringsdb.com/bundles/cards/02010.png",
-        "esfera": "neutral"
-    },
-    {
-        "tempo_segundos": 10579,
-        "nome": "Song of Travel",
-        "url": "https://ringsdb.com/bundles/cards/02081.png",
         "esfera": "neutral"
     },
     {
@@ -114,25 +96,13 @@
         "esfera": "lore"
     },
     {
-        "tempo_segundos": 12027,
-        "nome": "Grima Wormtongue",
-        "url": "",
-        "esfera": "neutral"
-    },
-    {
         "tempo_segundos": 13337,
         "nome": "Grimbeorn the Old",
         "url": "https://ringsdb.com/bundles/cards/19001.png",
         "esfera": "tactics"
     },
     {
-        "tempo_segundos": 14267,
-        "nome": "Gladden Fields Ally",
-        "url": "",
-        "esfera": "lore"
-    },
-    {
-        "tempo_segundos": 14277,
+        "tempo_segundos": 14278,
         "nome": "Elrond",
         "url": "https://ringsdb.com/bundles/cards/142005.png",
         "esfera": "lore"
