@@ -1,0 +1,110 @@
+[
+    {
+        "tempo_segundos": 2669,
+        "nome": "Glamdring",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/142013.png"
+    },
+    {
+        "tempo_segundos": 2739,
+        "nome": "Faramir",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/144002.png"
+    },
+    {
+        "tempo_segundos": 2797,
+        "nome": "Favor of the Valar",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/10124.png"
+    },
+    {
+        "tempo_segundos": 2852,
+        "nome": "Sharp-eyed Drû",
+        "url": "https://ringsdb.com/bundles/cards/310076.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2878,
+        "nome": "Gorgûn-hunter",
+        "url": "https://ringsdb.com/bundles/cards/310080.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3158,
+        "nome": "Mushroom Gatherer",
+        "url": "https://ringsdb.com/bundles/cards/310077.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3261,
+        "nome": "Warden of Healing",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/04083.png"
+    },
+    {
+        "tempo_segundos": 3460,
+        "nome": "Ranger Spikes",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/05017.png"
+    },
+    {
+        "tempo_segundos": 3567,
+        "nome": "Glamdring",
+        "url": "https://ringsdb.com/bundles/cards/142013.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3623,
+        "nome": "Drúedain Seer",
+        "url": "https://ringsdb.com/bundles/cards/310079.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3674,
+        "nome": "Sharp-eyed Drû",
+        "url": "https://ringsdb.com/bundles/cards/310076.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3747,
+        "nome": "Poisoned Darts",
+        "url": "https://ringsdb.com/bundles/cards/310081.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 3815,
+        "nome": "Daeron's Runes",
+        "url": "https://ringsdb.com/bundles/cards/04108.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4048,
+        "nome": "Power in the Earth",
+        "url": "https://ringsdb.com/bundles/cards/01056.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 4234,
+        "nome": "Leather Boots",
+        "url": "https://ringsdb.com/bundles/cards/19060.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4250,
+        "nome": "Wingfoot",
+        "url": "https://ringsdb.com/bundles/cards/08092.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4314,
+        "nome": "Masters of the Forest",
+        "url": "https://ringsdb.com/bundles/cards/310084.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 5281,
+        "nome": "Eagles of the Misty Mountains",
+        "url": "https://ringsdb.com/bundles/cards/02119.png",
+        "esfera": "tactics"
+    }
+]
