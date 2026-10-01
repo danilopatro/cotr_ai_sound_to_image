@@ -1,0 +1,140 @@
+[
+    {
+        "tempo_segundos": 343,
+        "nome": "Second Breakfast",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/02027.png"
+    },
+    {
+        "tempo_segundos": 762,
+        "nome": "Steward of Gondor",
+        "url": "https://ringsdb.com/bundles/cards/01026.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 1891,
+        "nome": "A Test of Will",
+        "url": "https://ringsdb.com/bundles/cards/01050.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5740,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 6403,
+        "nome": "Rosie Cotton",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/146005.png"
+    },
+    {
+        "tempo_segundos": 7805,
+        "nome": "Steward of Gondor",
+        "url": "https://ringsdb.com/bundles/cards/01026.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 7831,
+        "nome": "Eowyn",
+        "url": "",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 7854,
+        "nome": "Glorfindel",
+        "url": "https://ringsdb.com/bundles/cards/01011.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 7857,
+        "nome": "Eowyn",
+        "url": "",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 7900,
+        "nome": "Flame of the West",
+        "esfera": "leadership",
+        "url": ""
+    },
+    {
+        "tempo_segundos": 7998,
+        "nome": "Falco Boffin",
+        "esfera": "lore",
+        "url": ""
+    },
+    {
+        "tempo_segundos": 8659,
+        "nome": "Steward of Gondor",
+        "url": "https://ringsdb.com/bundles/cards/01026.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 9687,
+        "nome": "Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/08112.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 10517,
+        "nome": "The Hunt for Gollum",
+        "url": "",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 10544,
+        "nome": "Gondorian Spearman",
+        "url": "https://ringsdb.com/bundles/cards/01029.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 10562,
+        "nome": "Song of Kings",
+        "url": "https://ringsdb.com/bundles/cards/02010.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 10579,
+        "nome": "Song of Travel",
+        "url": "https://ringsdb.com/bundles/cards/02081.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 11025,
+        "nome": "Eleanor",
+        "url": "https://ringsdb.com/bundles/cards/01008.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 11171,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/04053.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 12027,
+        "nome": "Grima Wormtongue",
+        "url": "",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 13337,
+        "nome": "Grimbeorn the Old",
+        "url": "https://ringsdb.com/bundles/cards/19001.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 14267,
+        "nome": "Gladden Fields Ally",
+        "url": "",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 14277,
+        "nome": "Elrond",
+        "url": "https://ringsdb.com/bundles/cards/142005.png",
+        "esfera": "lore"
+    }
+]
