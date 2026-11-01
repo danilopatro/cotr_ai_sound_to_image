@@ -1,0 +1,290 @@
+[
+    {
+        "tempo_segundos": 889,
+        "nome": "Light the Beacons",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/05011.png"
+    },
+    {
+        "tempo_segundos": 977,
+        "nome": "Dwarven Tomb",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01053.png"
+    },
+    {
+        "tempo_segundos": 1215,
+        "nome": "Light the Beacons",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/05011.png"
+    },
+    {
+        "tempo_segundos": 1378,
+        "nome": "Rosie Cotton",
+        "url": "https://ringsdb.com/bundles/cards/146005.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 1484,
+        "nome": "Northern Tracker",
+        "url": "https://ringsdb.com/bundles/cards/01045.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 1507,
+        "nome": "Flame of Anor",
+        "url": "https://ringsdb.com/bundles/cards/142007.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 1507,
+        "nome": "You Cannot Pass!",
+        "url": "https://ringsdb.com/bundles/cards/308009.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2015,
+        "nome": "Gandalf's Search",
+        "url": "https://ringsdb.com/bundles/cards/01067.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2053,
+        "nome": "Steward of Orthanc",
+        "url": "https://ringsdb.com/bundles/cards/17037.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2080,
+        "nome": "Zigil Miner",
+        "url": "https://ringsdb.com/bundles/cards/03009.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 2104,
+        "nome": "Gandalf's Search",
+        "url": "https://ringsdb.com/bundles/cards/01067.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2117,
+        "nome": "Sneak Attack",
+        "url": "https://ringsdb.com/bundles/cards/01023.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 2128,
+        "nome": "Dáin Ironfoot",
+        "url": "https://ringsdb.com/bundles/cards/02116.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 2168,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 2181,
+        "nome": "Zigil Miner",
+        "url": "https://ringsdb.com/bundles/cards/03009.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 2207,
+        "nome": "Gandalf's Search",
+        "url": "https://ringsdb.com/bundles/cards/01067.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 2353,
+        "nome": "The Three Hunters",
+        "esfera": "fellowship",
+        "url": "https://ringsdb.com/bundles/cards/143013.png"
+    },
+    {
+        "tempo_segundos": 2353,
+        "nome": "Bond of Friendship",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/22147.png"
+    },
+    {
+        "tempo_segundos": 2444,
+        "nome": "The Free Peoples",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/17064.png"
+    },
+    {
+        "tempo_segundos": 3415,
+        "nome": "Keen as Lances",
+        "url": "https://ringsdb.com/bundles/cards/10037.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 3666,
+        "nome": "Second Breakfast",
+        "url": "https://ringsdb.com/bundles/cards/02027.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 4243,
+        "nome": "Narya",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/11015.png"
+    },
+    {
+        "tempo_segundos": 4245,
+        "nome": "Sneak Attack",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/01023.png"
+    },
+    {
+        "tempo_segundos": 4300,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 4454,
+        "nome": "Legolas",
+        "url": "https://ringsdb.com/bundles/cards/143005.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4462,
+        "nome": "Meneldor",
+        "url": "https://ringsdb.com/bundles/cards/19031.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4471,
+        "nome": "Beregond",
+        "url": "https://ringsdb.com/bundles/cards/05001.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4481,
+        "nome": "Support of the Eagles",
+        "url": "https://ringsdb.com/bundles/cards/02120.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4514,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 4566,
+        "nome": "Beorn",
+        "url": "https://ringsdb.com/bundles/cards/131005.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4618,
+        "nome": "Gandalf",
+        "url": "https://ringsdb.com/bundles/cards/142002.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 4679,
+        "nome": "Word of Command",
+        "url": "https://ringsdb.com/bundles/cards/04084.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4720,
+        "nome": "Flame of Anor",
+        "url": "https://ringsdb.com/bundles/cards/142007.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 4734,
+        "nome": "Support of the Eagles",
+        "url": "https://ringsdb.com/bundles/cards/02120.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4738,
+        "nome": "Eagles of the Misty Mountains",
+        "url": "https://ringsdb.com/bundles/cards/02119.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 4743,
+        "nome": "Word of Command",
+        "url": "https://ringsdb.com/bundles/cards/04084.png",
+        "esfera": "lore"
+    },
+    {
+        "tempo_segundos": 4971,
+        "nome": "Mirror of Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/08118.png",
+        "esfera": "spirit"
+    },
+    {
+        "tempo_segundos": 5064,
+        "nome": "Sneak Attack",
+        "url": "https://ringsdb.com/bundles/cards/01023.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5072,
+        "nome": "Flame of Anor",
+        "url": "https://ringsdb.com/bundles/cards/142007.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 5188,
+        "nome": "Justice Shall Be Done",
+        "url": "https://ringsdb.com/bundles/cards/12119.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 5211,
+        "nome": "Meneldor's Flight",
+        "url": "https://ringsdb.com/bundles/cards/02076.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 5219,
+        "nome": "Eagles of the Misty Mountains",
+        "url": "https://ringsdb.com/bundles/cards/02119.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 5913,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/01001.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 5929,
+        "nome": "Merry",
+        "url": "https://ringsdb.com/bundles/cards/141003.png",
+        "esfera": "tactics"
+    },
+    {
+        "tempo_segundos": 6331,
+        "nome": "Aragorn",
+        "url": "https://ringsdb.com/bundles/cards/01001.png",
+        "esfera": "leadership"
+    },
+    {
+        "tempo_segundos": 6766,
+        "nome": "Éowyn",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01007.png"
+    },
+    {
+        "tempo_segundos": 7091,
+        "nome": "The Grey Wanderer",
+        "url": "https://ringsdb.com/bundles/cards/22074.png",
+        "esfera": "neutral"
+    },
+    {
+        "tempo_segundos": 7292,
+        "nome": "Mirror of Galadriel",
+        "url": "https://ringsdb.com/bundles/cards/08118.png",
+        "esfera": "spirit"
+    }
+]

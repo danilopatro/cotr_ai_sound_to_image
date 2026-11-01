@@ -1,0 +1,134 @@
+[
+    {
+        "tempo_segundos": 438,
+        "nome": "Small Target",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/06062.png"
+    },
+    {
+        "tempo_segundos": 464,
+        "nome": "Gilraen",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/306182.png"
+    },
+    {
+        "tempo_segundos": 546,
+        "nome": "Frodo Baggins",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/307014.png"
+    },
+    {
+        "tempo_segundos": 547,
+        "nome": "Beravor",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/01012.png"
+    },
+    {
+        "tempo_segundos": 612,
+        "nome": "Fast Hitch",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/02103.png"
+    },
+    {
+        "tempo_segundos": 672,
+        "nome": "Light the Beacons",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/05011.png"
+    },
+    {
+        "tempo_segundos": 703,
+        "nome": "Dwarven Tomb",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01053.png"
+    },
+    {
+        "tempo_segundos": 905,
+        "nome": "Daeron's Runes",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/04108.png"
+    },
+    {
+        "tempo_segundos": 1022,
+        "nome": "Gandalf's Search",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/01067.png"
+    },
+    {
+        "tempo_segundos": 1066,
+        "nome": "Zigil Miner",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/03009.png"
+    },
+    {
+        "tempo_segundos": 1171,
+        "nome": "Hail of Stones",
+        "esfera": "tactics",
+        "url": "https://ringsdb.com/bundles/cards/04032.png"
+    },
+    {
+        "tempo_segundos": 1221,
+        "nome": "Spare Hood and Cloak",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/131012.png"
+    },
+    {
+        "tempo_segundos": 1255,
+        "nome": "Sneak Attack",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/01023.png"
+    },
+    {
+        "tempo_segundos": 1255,
+        "nome": "Gandalf",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/142002.png"
+    },
+    {
+        "tempo_segundos": 1498,
+        "nome": "Loyal Hound",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/19148.png"
+    },
+    {
+        "tempo_segundos": 1509,
+        "nome": "Reforged",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/19153.png"
+    },
+    {
+        "tempo_segundos": 1713,
+        "nome": "Unexpected Courage",
+        "esfera": "spirit",
+        "url": "https://ringsdb.com/bundles/cards/01057.png"
+    },
+    {
+        "tempo_segundos": 1751,
+        "nome": "Drinking Song",
+        "esfera": "lore",
+        "url": "https://ringsdb.com/bundles/cards/19116.png"
+    },
+    {
+        "tempo_segundos": 2088,
+        "nome": "Gandalf",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/142002.png"
+    },
+    {
+        "tempo_segundos": 2541,
+        "nome": "Sneak Attack",
+        "esfera": "leadership",
+        "url": "https://ringsdb.com/bundles/cards/01023.png"
+    },
+    {
+        "tempo_segundos": 2785,
+        "nome": "Gandalf",
+        "esfera": "neutral",
+        "url": "https://ringsdb.com/bundles/cards/142002.png"
+    },
+    {
+        "tempo_segundos": 3306,
+        "nome": "Boromir",
+        "url": "https://ringsdb.com/bundles/cards/142004.png",
+        "esfera": "tactics"
+    }
+]
