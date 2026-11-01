@@ -69,11 +69,12 @@ def get_available_episodes():
             audio_url = enclosure.attrib.get('url') if enclosure is not None else ''
             
             # Tenta encontrar o número após "Episode", "CotR" ou isolado
-            # Episode 257.5 - Second Breakfast 2026
+            re_version = 'v1'
             match = re.search(r'(?:Episode|CotR|Ep)[\s\-]*(\d+)', title_full, re.IGNORECASE)
 
             if not match:
                 match = re.search(r'\b(\d{2,4})\b', title_full)
+                re_version = 'v2'
                 
             if match and audio_url:
                 ep_num = match.group(1)
@@ -94,7 +95,8 @@ def get_available_episodes():
                 rss_config[ep_num] = {
                     "title": ep_title,
                     "subtitle": ep_subtitle,
-                    "audioSrc": audio_url
+                    "audioSrc": audio_url,
+                    "re_version": re_version
                 }
     except Exception as e:
         print("Erro ao processar RSS do Libsyn:", e)
