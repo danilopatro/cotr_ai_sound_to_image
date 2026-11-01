@@ -72,7 +72,7 @@ def get_available_episodes():
             # Episode 257.5 - Second Breakfast 2026
             match = re.search(r'(?:Episode|CotR|Ep)[\s\-]*(.?\d)+', title_full, re.IGNORECASE)
             if not match:
-                match = re.search(r'\b(\d{2,4})\b', title_full)
+                match = re.search(r'\b(.?\d)+\b', title_full)
                 
             if match and audio_url:
                 ep_num = match.group(1)
