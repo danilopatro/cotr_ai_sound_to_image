@@ -70,7 +70,7 @@ def get_available_episodes():
             
             # Tenta encontrar o número após "Episode", "CotR" ou isolado
             # Episode 257.5 - Second Breakfast 2026
-            match = re.search(r'(?:Episode|CotR|Ep)[\s\-]*[.?\d]+', title_full, re.IGNORECASE)
+            match = re.search(r'(?:Episode|CotR|Ep)[\s\-]*(.?\d)+', title_full, re.IGNORECASE)
             if not match:
                 match = re.search(r'\b(\d{2,4})\b', title_full)
                 
