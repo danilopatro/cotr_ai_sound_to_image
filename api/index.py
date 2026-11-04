@@ -70,10 +70,10 @@ def get_available_episodes():
             
             # Tenta encontrar o número após "Episode", "CotR" ou isolado
             re_version = 'v1'
-            match = re.search(r'(?:Episode|CotR|Ep)[\s\-]*(\d+)', title_full, re.IGNORECASE)
+            match = re.search(r'(?:Episode|CotR|Ep)[\s\-]*(\d+(?:\.\d+)?)', title_full, re.IGNORECASE)
 
             if not match:
-                match = re.search(r'\b(\d{2,4})\b', title_full)
+                match = re.search(r'\b(\d{2,4}(?:\.\d+)?)\b', title_full)
                 re_version = 'v2'
                 
             if match and audio_url:
