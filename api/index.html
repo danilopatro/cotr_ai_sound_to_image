@@ -375,18 +375,20 @@
                 }
 
                 // Cruza os arquivos que temos na pasta com a biblioteca do RSS
-                availableFiles.forEach(epId => {
-                    const option = document.createElement('option');
-                    option.value = epId;
-                    
-                    if (episodesConfig[epId]) {
-                        option.textContent = `${episodesConfig[epId].title}: ${episodesConfig[epId].subtitle}`;
-                    } else {
-                        // Fallback de segurança para episódios antigos fora do feed atual
-                        option.textContent = `Episode ${epId} (Data only - Missing Audio)`;
-                    }
-                    
-                    episodeSelect.appendChild(option);
+                availableFiles
+                    .sort((a, b) => parseFloat(b) - parseFloat(a))
+                    .forEach(epId => {
+                        const option = document.createElement('option');
+                        option.value = epId;
+                        
+                        if (episodesConfig[epId]) {
+                            option.textContent = `${episodesConfig[epId].title}: ${episodesConfig[epId].subtitle}`;
+                        } else {
+                            // Fallback de segurança para episódios antigos fora do feed atual
+                            option.textContent = `Episode ${epId} (Data only - Missing Audio)`;
+                        }
+                        
+                        episodeSelect.appendChild(option);
                 });
 
                 episodeSelect.disabled = false;
