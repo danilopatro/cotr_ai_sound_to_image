@@ -380,7 +380,7 @@
                     option.value = epId;
                     
                     if (episodesConfig[epId]) {
-                        option.textContent = `${episodesConfig[epId].title}: ${episodesConfig[epId].subtitle} ${episodesConfig[epId].re_version} `;
+                        option.textContent = `${episodesConfig[epId].title}: ${episodesConfig[epId].subtitle}`;
                     } else {
                         // Fallback de segurança para episódios antigos fora do feed atual
                         option.textContent = `Episode ${epId} (Data only - Missing Audio)`;
